@@ -17,7 +17,7 @@ a:hover {
     right: 100px;
 }
 
-.navbar-links li{
+.navbar-links li {
     color: blue;
     text-decoration: none;
     list-style-type: none;
@@ -42,8 +42,8 @@ a:hover {
     z-index: 2;
 }
 
-#things{
-    top: 222px;   
+#things {
+    top: 222px;
 }
 
 #intro {
@@ -105,9 +105,9 @@ a:hover {
     background-image: url('https://m1.behance.net/rendition/modules/129566877/disp/7f4a319c7bfcbaf6c1aac5d7c8eb1012.png');
 }
 
-.circle-argeebe{
-    background-image: url('http://i.imgur.com/ehy4m8F.png'); 
-    background-size: 70%;    
+.circle-argeebe {
+    background-image: url('http://i.imgur.com/ehy4m8F.png');
+    background-size: 70%;
 }
 
 .row {
@@ -150,7 +150,6 @@ a:hover {
         left: 50px;
         top: 450px;
     }
-    
     #things {
         top: 382px;
     }
@@ -176,5 +175,8 @@ a:hover {
     }
     .row {
         top: 400px;
+    }
+    #things {
+        top: 222px;
     }
 }
