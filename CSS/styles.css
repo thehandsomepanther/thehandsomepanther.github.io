@@ -110,6 +110,12 @@ a:hover {
     background-size: 70%;
 }
 
+.circle-hoa {
+    background-image: url('http://i.imgur.com/hxvvsVc.png');
+    background-size: 70%;
+    background-color: rgb(0, 0, 0);
+}
+
 .row {
     position: relative;
     top: 475px;
