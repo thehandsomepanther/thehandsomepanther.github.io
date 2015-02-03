@@ -11,6 +11,24 @@ a:hover {
     color: #CCCCCC;
 }
 
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.navbar-links li{
+    color: blue;
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    width: 100px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    text-align: center;
+}
+
 .header {
     position: absolute;
     font-family: 'Playfair Display', serif;
@@ -24,6 +42,10 @@ a:hover {
     z-index: 2;
 }
 
+#things{
+    top: 222px;   
+}
+
 #intro {
     position: fixed;
     top: 142px;
@@ -31,33 +53,6 @@ a:hover {
     width: 750px;
     z-index: 1;
     padding-left: 50px;
-}
-
-#contact-circle {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    border-radius: 250px;
-    position: fixed;
-    top: -10px;
-    right: -10px;
-    z-index: 16;
-}
-
-#contact-circle:hover {
-    cursor: pointer;
-}
-
-#contact-circle-text {
-    position: absolute;
-    font-family: sans-serif;
-    display: inline-block;
-    top: 30%;
-    left: 30%;
-    line-height: normal;
-    text-align: center;
-    color: white;
-    transition: notransition;
 }
 
 #scroll {
