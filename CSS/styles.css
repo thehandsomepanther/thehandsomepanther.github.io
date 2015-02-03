@@ -150,6 +150,10 @@ a:hover {
         left: 50px;
         top: 450px;
     }
+    
+    #things {
+        top: 382px;
+    }
     #scroll {
         position: fixed;
         right: 40px;
