@@ -11,14 +11,18 @@ a:hover {
     color: #CCCCCC;
 }
 
-.navbar {
-    position: absolute;
-    top: 20px;
-    right: 100px;
+.nav-square {
+    position: fixed;
+    background-color: #FBFBF9;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    z-index: 5;
 }
 
 .navbar-links li {
-    color: blue;
+    color: white;
     text-decoration: none;
     list-style-type: none;
     float: right;
@@ -26,6 +30,8 @@ a:hover {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
     margin-left: 10px;
+    line-height: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -40,10 +46,6 @@ a:hover {
     left: 470px;
     top: 292px;
     z-index: 2;
-}
-
-#things {
-    top: 222px;
 }
 
 #intro {
@@ -72,6 +74,8 @@ a:hover {
 
 .wrapper-things {
     height: 820px;
+    background-color: #FBFBF9;
+    z-index: -2;
 }
 
 .wrapper-design {
@@ -156,9 +160,6 @@ a:hover {
         left: 50px;
         top: 450px;
     }
-    #things {
-        top: 382px;
-    }
     #scroll {
         position: fixed;
         right: 40px;
@@ -181,11 +182,5 @@ a:hover {
     }
     .row {
         top: 400px;
-    }
-    #things {
-        top: 222px;
-    }
-    .navbar{
-        right: 20px;   
     }
 }
