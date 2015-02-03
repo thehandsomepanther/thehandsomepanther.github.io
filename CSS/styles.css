@@ -179,4 +179,7 @@ a:hover {
     #things {
         top: 222px;
     }
+    .navbar{
+        right: 0;   
+    }
 }
