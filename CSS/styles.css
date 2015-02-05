@@ -14,16 +14,30 @@ a:hover {
 .nav-square {
     position: fixed;
     background-color: #FBFBF9;
-    width: 100px;
-    height: 100px;
-    top: 0;
+    width: 120px;
+    height: 120px;
+    top: -90px;
     right: 0;
     z-index: 6;
 }
 
+.nav-footer {
+    position: relative;
+    height: 10px;
+    background-color: #FF7260;
+    bottom: 0;
+    width: 100px;
+    left: 10px;
+    top: 90px;
+}
+
+.nav-square:hover {
+    cursor: pointer;   
+}
+
 .little-square {
     position: fixed;
-    background-color: red;
+    background-color: #FF7260;
     width: 40px;
     height: 40px;
     top: 65px;
@@ -46,7 +60,7 @@ a:hover {
     text-decoration: none;
     list-style-type: none;
     float: right;
-    width: 100px;
+    width: 120px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
     margin-left: 10px;
@@ -147,7 +161,7 @@ a:hover {
 
 .box-footer {
     height: 10px;
-    background-color: red;
+    background-color: #FF7260;
     z-index: 6;
 }
 
