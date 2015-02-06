@@ -107,7 +107,7 @@ a:hover {
 }
 
 .wrapper-things {
-    height: 820px;
+    height: 120vh;
     background-color: #FBFBF9;
     z-index: -2;
 }
@@ -234,7 +234,7 @@ a:hover {
         height: 2400px;
     }
     .wrapper-things {
-        height: 900px;
+        height: 120vh;
     }
     .header {
         left: 50px;
@@ -258,7 +258,7 @@ a:hover {
         height: 2000px;
     }
     .wrapper-things {
-        height: 700px;
+        height: 120vh;
     }
     .row {
         top: 400px;
