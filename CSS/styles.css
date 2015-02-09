@@ -234,8 +234,6 @@ a:hover {
     .row {
         position: absolute;
         top: 650px;
-        width: 300px;
-        left: 50px;
     }
     .wrapper {
         height: 2400px;
