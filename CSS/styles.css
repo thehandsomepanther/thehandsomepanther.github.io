@@ -11,12 +11,17 @@ a:hover {
     color: #CCCCCC;
 }
 
+.top {
+    position: absolute;
+    top: 0;
+}    
+
 .nav-square {
     position: fixed;
     background-color: #FBFBF9;
     width: 120px;
-    height: 120px;
-    top: -90px;
+    height: 150px;
+    top: -120px;
     right: 0;
     z-index: 6;
 }
@@ -28,7 +33,7 @@ a:hover {
     bottom: 0;
     width: 100px;
     left: 10px;
-    top: 90px;
+    top: 120px;
 }
 
 .nav-square:hover {
@@ -232,8 +237,8 @@ a:hover {
 
 @media (max-width: 992px) {
     .row {
-        position: absolute;
         top: 650px;
+        max-width: 300px;
     }
     .wrapper {
         height: 2400px;
@@ -246,10 +251,7 @@ a:hover {
         top: 450px;
     }
     #scroll {
-        position: fixed;
         right: 40px;
-        top: auto;
-        bottom: 30px;
     }
 }
 

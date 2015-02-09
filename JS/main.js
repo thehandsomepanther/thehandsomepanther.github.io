@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('.nav-square').click(function () {
         if (nav_down) {
             $('.nav-square').animate({
-                top: "-90px"
+                top: "-120px"
             }, 200, function () {});
             nav_down = false;
         } else {
