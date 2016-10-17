@@ -2,149 +2,172 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Josh Shi's personal website and portfolio.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>josh shi makes things.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="JS/main.js"></script>
-    <link rel='shortcut icon' type='image/png' href='Images/favicon (1).ico' />
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-41783844-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="josh shi makes things.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>josh shi makes things.</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel='shortcut icon' type='image/png' href='images/favicon-1.ico' />
 </head>
 
 <body>
-    <!--
-    <div class='little-square'> </div>
-    <div class='big-square'> </div>
--->
-    <a class='top' name='top'></a>
-    <div class='nav-square'>
-        <ul class='navbar-links'>
-            <li><a href='#top'>TOP</a>
-            </li>
-            <li><a href='#design'>DESIGN</a>
-            </li>
-            <li><a href='#code'>CODE</a>
-            </li>
-            <li><a href='Images/shi-joshua-resume.pdf' download>RESUME</a>
-            </li>
+  <section class='bio-section content-section'>
+    <h1><a class='bio-header' href="https://en.wikipedia.org/wiki/BIOS" target="_blank">a bio.</a></h1>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header'>me</h2>
+        <p class='info-description'>
+          hey there, my name's josh and i'm a computer science student at northwestern university. right now i'm working as a technical student fellow at <a href="http://knightlab.northwestern.edu" target="_blank">knight lab</a>, doing user testing for <a href="https://loft.io" target="_blank">the loft</a> with <a href="http://delta.northwestern.edu" target="_blank">delta lab</a>, directing <a href="http://wildhacks.org" target="_blank">wildhacks</a>, and editing-in-chiefing the <a href="http://www.thenurj.com" target="_blank">northwestern undergraduate research journal</a>. i spent my past summer working at groupon. i put some of the things i make here.
+        </p>
+      </div>
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="images/shi-joshua-resume.pdf" target="_blank">résumé</a></h2>
+      </div>
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://twitter.com/unfollowjoshshi" target="_blank">tweet machine</a></h2>
+      </div>
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://github.com/thehandsomepanther" target="_blank">gitsblub</a></h2>
+      </div>
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="http://be.net/joshshi" target="_blank">zoom and behance</a></h2>
+      </div>
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://medium.com/@joshshi" target="_blank">s, m, l, xl</a></h2>
+      </div>
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="mailto:holla&#64;joshshi.com" target="_blank">electronic mail</a></h2>
+      </div>
+    </div>
+  </section>
+  <section class="intro">
+    <div class="header">
+      <span class="josh-shi-makes">
+        josh shi makes
+      </span>
+      <span class='dropdown-wrapper' id='dropdown-wrapper'>
+        <span class='things-dummy'>things.</span>
+        <ul class='dropdown'>
+          <li class='bio'><a href="#bio-section">a bio.</a></li>
+          <li class='things active'><a>things.</a></li>
+          <li class='code'><a href="#code-section">code.</a></li>
+          <li class='design'><a href="#design-section">design.</a></li>
         </ul>
-        <div class='nav-footer'></div>
+      </span>
     </div>
-    <div>
-        <div class='header' id='intro'>
-            josh shi
-            <br>makes
-        </div>
+  </section>
+  <section class='code-section content-section'>
+    <h1><a class='code-header' href="https://github.com/thehandsomepanther" target='_blank'>code.</a></h1>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="http://wildhacks.org" target="_blank">wildhacks 2016</a></h2>
+        <p class='info-description'>
+          in addition to directing and branding, i also develop a lot of the front-end for wildhacks. the 2016 site is live now at <a href="http://wildhacks.org">wildhacks.org</a>
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="http://wildhacks.org" target="_blank"><img src="images/wildhacks-2016.png"/></a>
+      </div>
     </div>
-    <div class='wrapper wrapper-things'>
-        <div class='header' id='things'>
-            things.
-        </div>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://www.behance.net/gallery/31807615/swaatch" target="_blank">swaatch</a></h2>
+        <p class='info-description'>
+          a task management app built in the mean stack i made as a solo project that allows you to create and manage tasks based on urgency and importance
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="https://www.behance.net/gallery/31807615/swaatch" target="_blank"><img src="images/swaatch.png" alt="" /></a>
+      </div>
     </div>
-    <div id='scroll'>
-        <i class="fa fa-angle-down fa-3x"></i>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://github.com/NUKnightLab/timeline-addon" target="_blank">timeline helper</a></h2>
+        <p class='info-description'>
+          a knight lab project which provides a google sheets addon for <a href="http://timeline.knightlab.com">timelinejs</a> users that makes it easier to create and edit timeline information
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="https://github.com/NUKnightLab/timeline-addon" target="_blank"><img src="images/timeline-addon.png"/></a>
+      </div>
     </div>
-    <a name='design'></a>
-    <div class='wrapper wrapper-design' id='wrapper-design'>
-        <div class='header'>
-            <a href='http://behance.net/joshuashi' target='blank'>
-                   design.
-               </a>
-        </div>
-        <div class='container-fluid'>
-            <div class='row'>
-                <div class='col-md-4'>
-                    <div class='circle circle-making-waves'></div>
-                    <div class='description-box making-waves-box'>
-                        <div class='box-triangle'></div>
-                        <h1 class='project-header'>Making Waves</h1>
-                        <p class='project-description'>A proposed branding identity for a convening hosted by StriveTogether, a subsidiary of KnowledgeWorks. Work includes branding, logo, and mockups.
-                            <a href='https://www.behance.net/gallery/19321693/Making-Waves-Logo-Branding' target='blank'>More <i class="fa fa-angle-double-right"></i></a>
-                        </p>
-                        <div class='box-footer'></div>
-                    </div>
-                </div>
-                <div class='col-md-4'>
-                    <div class='circle circle-spark-retreat'></div>
-                    <div class='description-box spark-retreat-box'>
-                        <div class='box-triangle'></div>
-                        <h1 class='project-header'>Spark Retreat</h1>
-                        <p class='project-description'>Branding work created for a company retreat at KnowledgeWorks. Assets included logo, apparel, PowerPoint slides, a poster, and more. Not affiliated with <i>Spark</i>, my high school's magazine.
-                            <a href='https://www.behance.net/gallery/18266063/KnowledgeWorks-Spark-Retreat' target='blank'>More <i class="fa fa-angle-double-right"></i></a>
-                        </p>
-                        <div class='box-footer'></div>
-                    </div>
-                </div>
-                <div class='col-md-4'>
-                    <div class='circle circle-connxus'></div>
-                    <div class='description-box connxus-box'>
-                        <div class='box-triangle'></div>
-                        <h1 class='project-header'>ConnXus Designs</h1>
-                        <p class='project-description'>Icons and other assets made during an internship at ConnXus for the launch of their new site. Also created their style and branding guide as well as site documentation.
-                            <a href='https://www.behance.net/gallery/19160505/ConnXus-Internship' target='blank'>More <i class="fa fa-angle-double-right"></i></a>
-                        </p>
-                        <div class='box-footer'></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://github.com/thehandsomepanther/crouton" target="_blank">crouton</a></h2>
+        <p class='info-description'>
+          a python web scraper for northwestern university's course and teacher evaluations
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="https://github.com/thehandsomepanther/crouton" target="_blank"><img src="images/crouton.png"/></a>
+      </div>
     </div>
-    <a name='code'></a>
-    <div class='wrapper wrapper-code' id='wrapper-code'>
-        <div class='header'>
-            <a href='http://github.com/thehandsomepanther' target='blank'>
-                   code.
-               </a> </div>
-        <div class='container-fluid'>
-            <div class='row'>
-                <div class='col-md-4'>
-                    <div class='circle circle-argeebe'></div>
-                    <div class='description-box argeebe-box'>
-                        <div class='box-triangle'></div>
-                        <h1 class='project-header'>Argeebe</h1>
-                        <p class='project-description'>A very fun and simple little web-based color guessing game that I was inspired to make after looking at <a href='http://www.therodimels.com/wp-content/uploads/2013/07/photo-4.jpg' target='blank'>Pantone swatches.</a> Used to teach myself a lot of fundamentals of web design and development. Functions correctly, but features are still being added.
-                            <a href='http://joshshi.com/argeebe' target='blank'>Play <i class="fa fa-angle-double-right"></i></a>
-                        </p>
-                        <div class='box-footer'></div>
-                    </div>
-                </div>
-                <div class='col-md-4'>
-                    <div class='circle circle-hoa'></div>
-                    <div class='description-box hoa-box'>
-                        <div class='box-triangle'></div>
-                        <h1 class='project-header'>Helvetica or Arial?</h1>
-                        <p class='project-description'>A game I made inspired from <a href='http://www.ironicsans.com/helvarialquiz/' target='blank'>this</a> by Ironic Sans. I've been interested in typography for a while and Helvetica or Arial was a fun project I started working on to get more Javascript under my belt. Functions correctly, but features are still being added.
-                            <a href='http://joshshi.com/helveticaorarial' target='blank'>Play <i class="fa fa-angle-double-right"></i></a>
-                        </p>
-                        <div class='box-footer'></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://github.com/thehandsomepanther/secreter-santa" target="_blank">secreter santa</a></h2>
+        <p class='info-description'>
+          my friends and i do secret santa every year. a few of us have had the same people too many times in a row, so i used the munkres algorithm for a script that makes better santa assignments and sends out emails
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="https://github.com/thehandsomepanther/secreter-santa" target="_blank"><img src="images/santa.png"/></a>
+      </div>
     </div>
-    <div class='footer'>
-        <div class='footer-text'>
-            <p>josh shi made this website. <a href='mailto:joshualshi@ymail.com' target='blank'>ask him to make you stuff.</a>
-            </p>
-        </div>
+    <div class="section-link">
+      <a href="https://github.com/thehandsomepanther">see more code on my github</a>
     </div>
+  </section>
+  <section class='design-section content-section'>
+    <h1><a class='design-header' href="https://www.behance.net/joshshi" target='_blank'>design.</a></h1>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="http://www.thenurj.com" target="_blank">nurj</a></h2>
+        <p class='info-description'>
+          these days i serve as editor-in-chief of the northwestern undergraduate research journal, a student-run publication dedicated to showcasing cool undergraduate research on campus. last year i redesigned the publication, which you can see <a href="https://issuu.com/nurj/docs/creative_116pg_r2">here</a>.
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="http://www.thenurj.com" target="_blank"><img src="images/nurj.png"/></a>
+      </div>
+    </div>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="https://github.com/NUWildHacks/wildhacks-2015" target="_blank">wildhacks 2015</a></h2>
+        <p class='info-description'>
+          i did the front-end and branding for wildhacks 2015, our hackathon here at northwestern university. i wrote a medium post about the process <a href="https://medium.com/nu-wildhacks/wildhacks-branding-and-identity-design-of-a-hackathon-5fdcb0b5aa92#.2vy36u3ii">here</a>. this website is no longer up, but you can <a href="https://github.com/NUWildHacks/wildhacks-2015">check it out on github</a>
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="https://github.com/NUWildHacks/wildhacks-2015" target="_blank"><img src="images/wildhacks-2015.png"/></a>
+      </div>
+    </div>
+    <div class="project-container">
+      <div class="info-container">
+        <h2 class='info-header header-left'><a href="http://learn.knightlab.com" target="_blank">learn.<br>knightlab</a></h2>
+        <p class='info-description'>
+          online learning website i helped prototype and perform user testing on as a student fellow at knight lab
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="image-container">
+        <a href="http://learn.knightlab.com" target="_blank"><img src="images/learn.png" /></a>
+      </div>
+    </div>
+    <div class="section-link">
+      <a href="https://www.behance.net/joshshi">see more design on my behance</a>
+    </div>
+  </section>
 </body>
 
 </html>
