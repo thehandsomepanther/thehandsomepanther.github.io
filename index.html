@@ -10,128 +10,12 @@
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/styles.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
   <script src="scripts/main.js"></script>
   <link rel='shortcut icon' type='image/png' href='images/favicon-1.ico' />
 </head>
 
 <body>
-  <section class='bio-section content-section'>
-    <h1><a class='bio-header' href="https://en.wikipedia.org/wiki/BIOS" target="_blank">a bio.</a></h1>
-    <div class="project-container">
-      <div class="info-container">
-        <h2 class='info-header'>me</h2>
-        <p class='info-description'>
-          hey there, my name's josh and i'm a computer science student at northwestern university. right now i'm working as a technical student fellow at <a href="http://knightlab.northwestern.edu" target="_blank">knight lab</a>, doing user testing for <a href="https://loft.io" target="_blank">the loft</a> with <a href="http://delta.northwestern.edu" target="_blank">delta lab</a>, directing <a href="http://wildhacks.org" target="_blank">wildhacks</a>, and editing-in-chiefing the <a href="http://www.thenurj.com" target="_blank">northwestern undergraduate research journal</a>. i spent my past summer working at groupon. i put some of the things i make here.
-        </p>
-      </div>
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="images/shi-joshua-resume.pdf" target="_blank">résumé</a></h2>
-      </div>
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="https://twitter.com/unfollowjoshshi" target="_blank">tweet machine</a></h2>
-      </div>
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="https://github.com/thehandsomepanther" target="_blank">gitsblub</a></h2>
-      </div>
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="http://be.net/joshshi" target="_blank">zoom and behance</a></h2>
-      </div>
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="https://medium.com/@joshshi" target="_blank">s, m, l, xl</a></h2>
-      </div>
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="mailto:holla&#64;joshshi.com" target="_blank">electronic mail</a></h2>
-      </div>
-    </div>
-  </section>
-  <section class="intro">
-    <div class="header">
-      <span class="josh-shi-makes">
-        josh shi makes
-      </span>
-      <span class='dropdown-wrapper' id='dropdown-wrapper'>
-        <span class='things-dummy'>things.</span>
-        <ul class='dropdown'>
-          <li class='bio'><a href="#bio-section">a bio.</a></li>
-          <li class='things active'><a>things.</a></li>
-          <li class='code'><a href="#code-section">code.</a></li>
-          <li class='design'><a href="#design-section">design.</a></li>
-        </ul>
-      </span>
-    </div>
-  </section>
-  <section class='code-section content-section'>
-    <h1><a class='code-header' href="https://github.com/thehandsomepanther" target='_blank'>code.</a></h1>
-    <div class="project-container">
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="https://github.com/thehandsomepanther/slag" target="_blank">slag</a></h2>
-        <p class='info-description'>
-          it's slack in your terminal. i wrote this mainly because up until recently i was using a late 2008 13" macbook as my work machine and the slack desktop/web apps were destroying me. you can npm install it <a href="https://www.npmjs.com/package/slag-cli">here</a>, and the code's up on <a href="https://github.com/thehandsomepanther/slag">github</a>.
-        </p>
-      </div>
-      <div class="spacer"></div>
-      <div class="image-container">
-        <a href="https://github.com/thehandsomepanther/slag" target="_blank"><img src="images/slag.png"/></a>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="http://wildhacks.org" target="_blank">wildhacks 2016</a></h2>
-        <p class='info-description'>
-          in addition to directing and branding, i also develop a lot of the front-end for wildhacks. the event is over, but the 2016 site is still up for you to peruse at <a href="http://wildhacks.org">wildhacks.org</a>
-        </p>
-      </div>
-      <div class="spacer"></div>
-      <div class="image-container">
-        <a href="http://wildhacks.org" target="_blank"><img src="images/wildhacks-2016.png"/></a>
-      </div>
-    </div>
-    <div class="section-link">
-      <a href="https://github.com/thehandsomepanther">see more code on my github</a>
-    </div>
-  </section>
-  <section class='design-section content-section'>
-    <h1><a class='design-header' href="https://www.behance.net/joshshi" target='_blank'>design.</a></h1>
-    <div class="project-container">
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="http://www.thenurj.com" target="_blank">nurj</a></h2>
-        <p class='info-description'>
-          these days i serve as editor-in-chief of the northwestern undergraduate research journal, a student-run publication dedicated to showcasing cool undergraduate research on campus. last year i redesigned the publication, which you can see <a href="https://issuu.com/nurj/docs/creative_116pg_r2">here</a>.
-        </p>
-      </div>
-      <div class="spacer"></div>
-      <div class="image-container">
-        <a href="http://www.thenurj.com" target="_blank"><img src="images/nurj.png"/></a>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="https://github.com/NUWildHacks/wildhacks-2015" target="_blank">wildhacks 2015</a></h2>
-        <p class='info-description'>
-          i did the front-end and branding for wildhacks 2015, our hackathon here at northwestern university. i wrote a medium post about the process <a href="https://medium.com/nu-wildhacks/wildhacks-branding-and-identity-design-of-a-hackathon-5fdcb0b5aa92#.2vy36u3ii">here</a>. this website is no longer up, but you can <a href="https://github.com/NUWildHacks/wildhacks-2015">check it out on github</a>
-        </p>
-      </div>
-      <div class="spacer"></div>
-      <div class="image-container">
-        <a href="https://github.com/NUWildHacks/wildhacks-2015" target="_blank"><img src="images/wildhacks-2015.png"/></a>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="info-container">
-        <h2 class='info-header header-left'><a href="http://learn.knightlab.com" target="_blank">learn.<br>knightlab</a></h2>
-        <p class='info-description'>
-          online learning website i helped prototype and perform user testing on as a student fellow at knight lab
-        </p>
-      </div>
-      <div class="spacer"></div>
-      <div class="image-container">
-        <a href="http://learn.knightlab.com" target="_blank"><img src="images/learn.png" /></a>
-      </div>
-    </div>
-    <div class="section-link">
-      <a href="https://www.behance.net/joshshi">see more design on my behance</a>
-    </div>
-  </section>
 </body>
 
 </html>
