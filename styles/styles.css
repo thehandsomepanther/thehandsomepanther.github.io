@@ -166,7 +166,9 @@ body {
           background-color: white; }
     .content-section .project-container .image-container {
       width: 60%;
-      display: inline-block; }
+      display: inline-block;
+      border-radius: 4px;
+      height: calc(100%-10px); }
       @media screen and (max-width: 768px) {
         .content-section .project-container .image-container {
           width: 90%; } }
@@ -177,8 +179,6 @@ body {
         -moz-transition: all .2s ease;
         -o-transition: all .2s ease;
         transition: all .2s ease; }
-      .content-section .project-container .image-container img:hover {
-        box-shadow: 10px 10px 0px #333; }
   .content-section .section-link {
     position: relative;
     width: 100%;

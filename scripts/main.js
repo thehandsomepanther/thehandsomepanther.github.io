@@ -86,9 +86,49 @@ if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.u
       setTimeout(function() {
         $('.dropdown .active').mouseleave();
       }, 1000)
-      
+
+      var mouse = {
+        x: $(document).width()/2,
+        y: $(document).height()/2,
+        lastScrolledLeft: 0,
+        lastScrolledTop: 0
+      }
+
+      $(window).mousemove(function(e) {
+        mouse.x = e.pageX;
+        mouse.y = e.pageY;
+        followMouse(mouse);
+      })
+
+      $(window).scroll(function(e) {
+        if(mouse.lastScrolledLeft != $(document).scrollLeft()){
+            mouse.x -= mouse.lastScrolledLeft;
+            mouse.lastScrolledLeft = $(document).scrollLeft();
+            mouse.x += mouse.lastScrolledLeft;
+        }
+        if(mouse.lastScrolledTop != $(document).scrollTop()){
+            mouse.y -= mouse.lastScrolledTop;
+            mouse.lastScrolledTop = $(document).scrollTop();
+            mouse.y += mouse.lastScrolledTop;
+        }
+
+        followMouse(mouse)
+      })
 
   });
+
+  function followMouse(mouse) {
+    $('.image-container').each(function(i) {
+      var x_center = $(this).offset().left + $(this).width()/2,
+          y_center = $(this).offset().top + $(this).height()/2;
+
+      var dist_x = (mouse.x - x_center)/30
+          dist_y = (mouse.y - y_center)/10;
+
+      $(this).css('transform', 'rotateX(' + -dist_y + 'deg) rotateY(' + dist_x + 'deg)')
+      $(this).css('box-shadow', -dist_x/2 + 'px ' + -dist_y/2 + 'px ' + '0px #111')
+    })
+  }
 
   function showDropdown(i) {
     $ ('.dropdown').children('li').each(function(j) {
