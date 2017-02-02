@@ -86,10 +86,10 @@ $(document).ready(function() {
       }, 1000)
 
       var mouse = {
-        x: $(document).width()/2,
-        y: $(document).height()/2,
-        lastScrolledLeft: 0,
-        lastScrolledTop: 0
+        x: $(document).width()/2 + $(window).scrollLeft(),
+        y: $(document).height()/2 + $(window).scrollTop(),
+        lastScrolledLeft: $(document).width()/2 + $(window).scrollLeft(),
+        lastScrolledTop: $(document).height()/2 + $(window).scrollTop()
       }
 
       $(window).mousemove(function(e) {
@@ -120,8 +120,8 @@ function followMouse(mouse) {
     var x_center = $(this).offset().left + $(this).width()/2,
         y_center = $(this).offset().top + $(this).height()/2;
 
-    var dist_x = (mouse.x - x_center)/30
-        dist_y = (mouse.y - y_center)/10;
+    var dist_x = (mouse.x - x_center)/50
+        dist_y = (mouse.y - y_center)/15;
 
     $(this).css('transform', 'rotateX(' + -dist_y + 'deg) rotateY(' + dist_x + 'deg)')
     $(this).css('box-shadow', -dist_x/2 + 'px ' + -dist_y/2 + 'px ' + '0px #111')
