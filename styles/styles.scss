@@ -14,8 +14,9 @@ $code-color: #2979FF;
 $bio-color: #FFAB40;
 
 $black: #111111;
+$offwhite: #f1f1f1;
 
-$primary-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+$primary-font-stack: Menlo, monospace;
 
 $break-medium: 768px;
 $break-small: 442px;
@@ -23,21 +24,23 @@ $break-small: 442px;
 html, body {
   padding: 0;
   margin: 0;
-  background-color: $black;
-  color: #f1f1f1;
+  background-color: $offwhite;
+  color: $black;
   font-family: $primary-font-stack;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 #three {
-  width: 50%;
+  width: 100%;
   height: 100vh;
   display: inline-block;
 }
 
 .intro {
-  display: inline-block;
+  position: absolute;
   vertical-align: top;
-  margin-top: 100px;
+  margin: 100px;
 
   p {
     font-weight: normal;

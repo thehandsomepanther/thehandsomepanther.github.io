@@ -1,19 +1,21 @@
 html, body {
   padding: 0;
   margin: 0;
-  background-color: #111111;
-  color: #f1f1f1;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; }
+  background-color: #f1f1f1;
+  color: #111111;
+  font-family: Menlo, monospace;
+  width: 100vw;
+  overflow-x: hidden; }
 
 #three {
-  width: 50%;
+  width: 100%;
   height: 100vh;
   display: inline-block; }
 
 .intro {
-  display: inline-block;
+  position: absolute;
   vertical-align: top;
-  margin-top: 100px; }
+  margin: 100px; }
   .intro p {
     font-weight: normal;
     font-size: 12px;
