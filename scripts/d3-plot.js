@@ -123,7 +123,7 @@ function scatterPlot3d( parent )
        .attr("string", key)
     .append("fontstyle")
        .attr("size", labelFontSize)
-       .attr("family", "SANS")
+       .attr("family", "MONOSPACE")
        .attr("justify", "END MIDDLE" )
   }
 
