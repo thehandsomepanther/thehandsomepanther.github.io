@@ -24,7 +24,7 @@ var projects = [
     research: .8
   },
   {
-    title: "something",
+    title: "loft.io",
     design: .8,
     code: .4,
     research: 0
