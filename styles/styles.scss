@@ -5,6 +5,36 @@
     transition: all .2s ease;
 }
 
+@mixin enable-text-selection {
+  -webkit-touch-callout: auto;
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+@mixin disable-text-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin grabby-hand {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+@mixin grabbing-hand {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
 $primary-link: #1DE9B6;
 $secondary-link: #B2DFDB;
 
@@ -28,23 +58,61 @@ html, body {
   color: $black;
   font-family: $primary-font-stack;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #three {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  display: inline-block;
 }
 
-.intro {
+p {
+  font-weight: normal;
+  font-size: .75rem;
+  line-height: 10px;
+  margin-top: 5px;
+}
+
+.content-container {
   position: absolute;
   vertical-align: top;
-  margin: 100px;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: calc(100% - 400px);
+  height: 100vh;
+  overflow-y: scroll;
+  @include disable-text-selection;
 
-  p {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 10px;
+  &::-webkit-scrollbar {
+    display: none;
   }
+
+  &:hover {
+    @include grabby-hand;
+
+    .content {
+      margin-bottom: 200px;
+
+      &:hover {
+        cursor: auto;
+        @include enable-text-selection;
+      }
+    }
+  }
+
+  &:active {
+    @include grabbing-hand;
+  }
+}
+
+.bio {
+  margin-bottom: 40px;
+}
+
+.project {
+  margin-top: 20px;
+}
+
+.project-description {
+  line-height: 18px;
 }

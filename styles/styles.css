@@ -5,20 +5,60 @@ html, body {
   color: #111111;
   font-family: Menlo, monospace;
   width: 100vw;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 #three {
-  width: 100%;
-  height: 100vh;
-  display: inline-block; }
+  width: 100vw;
+  height: 100vh; }
 
-.intro {
+p {
+  font-weight: normal;
+  font-size: .75rem;
+  line-height: 10px;
+  margin-top: 5px; }
+
+.content-container {
   position: absolute;
   vertical-align: top;
-  margin: 100px; }
-  .intro p {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 10px; }
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: calc(100% - 400px);
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .content-container::-webkit-scrollbar {
+    display: none; }
+  .content-container:hover {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab; }
+    .content-container:hover .content {
+      margin-bottom: 200px; }
+      .content-container:hover .content:hover {
+        cursor: auto;
+        -webkit-touch-callout: auto;
+        -webkit-user-select: auto;
+        -khtml-user-select: auto;
+        -moz-user-select: auto;
+        -ms-user-select: auto;
+        user-select: auto; }
+  .content-container:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing; }
+
+.bio {
+  margin-bottom: 40px; }
+
+.project {
+  margin-top: 20px; }
+
+.project-description {
+  line-height: 18px; }
 
 /*# sourceMappingURL=styles.css.map */

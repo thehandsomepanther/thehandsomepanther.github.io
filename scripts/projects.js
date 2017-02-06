@@ -18,13 +18,13 @@ var projects = [
     research: .3
   },
   {
-    title: "slag",
+    title: "loft.io",
     design: .4,
     code: 0,
     research: .8
   },
   {
-    title: "loft.io",
+    title: "slag",
     design: .8,
     code: .4,
     research: 0
