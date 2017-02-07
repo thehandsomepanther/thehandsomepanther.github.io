@@ -73,6 +73,13 @@ p {
   margin-top: 5px;
 }
 
+a {
+  &:after {
+    content: "↗";
+    padding-bottom: 10px;
+  }
+}
+
 .content-container {
   position: absolute;
   vertical-align: top;
@@ -111,6 +118,22 @@ p {
 
 .project {
   margin-top: 20px;
+}
+
+.project-image {
+  display: none;
+  width: 600px;
+  position: fixed;
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-title {
+  &:hover + .project-image {
+    display: block;
+  }
 }
 
 .project-description {

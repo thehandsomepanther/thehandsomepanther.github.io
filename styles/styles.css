@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   padding: 0;
   margin: 0;
@@ -16,6 +17,10 @@ p {
   font-size: .75rem;
   line-height: 10px;
   margin-top: 5px; }
+
+a:after {
+  content: "↗";
+  padding-bottom: 10px; }
 
 .content-container {
   position: absolute;
@@ -57,6 +62,16 @@ p {
 
 .project {
   margin-top: 20px; }
+
+.project-image {
+  display: none;
+  width: 600px;
+  position: fixed; }
+  .project-image img {
+    width: 100%; }
+
+.project-title:hover + .project-image {
+  display: block; }
 
 .project-description {
   line-height: 18px; }
