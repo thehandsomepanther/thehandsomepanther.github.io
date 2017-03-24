@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="container" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="info-container mono">
+    <div class="header-sticky">
+      <p><a href="/">Josh Shi</a></p>
+    </div>
+  </div><div class="post-container serif" itemprop="articleBody">
+    <header class="post-header">
+      <p class="mono post-title" itemprop="name headline">{{ page.title | escape }}</p>
+    </header>
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
