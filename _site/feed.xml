@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-23T23:20:28-04:00</updated><id>http://localhost:4000/</id><title type="html">josh shi</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-24T21:46:43-04:00</updated><id>http://localhost:4000/</id><title type="html">josh shi</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </subtitle><entry><title type="html">Collaborative Code Competitions</title><link href="http://localhost:4000/projects/unpublished/design/tech/research/2017/02/07/ccc.html" rel="alternate" type="text/html" title="Collaborative Code Competitions" /><published>2017-02-07T20:15:04-05:00</published><updated>2017-02-07T20:15:04-05:00</updated><id>http://localhost:4000/projects/unpublished/design/tech/research/2017/02/07/ccc</id><content type="html" xml:base="http://localhost:4000/projects/unpublished/design/tech/research/2017/02/07/ccc.html">&lt;p&gt;Up until last year, I was doing all my work on a late 2008 13” Macbook with eight gigs of ram. It wasn’t impossible to do work, but there were some tasks that would take a long time or would start my fan spinning (like launching Illustrator or watching videos on YouTube).&lt;/p&gt;
 
 &lt;p&gt;There was one thing, though, that absolutely destroyed me every time I opened up my laptop: the Slack app. I use Slack as my go-to communication app for student groups (for good reason, it’s the best one out there), which means that I was liable to be signed into around five Slack teams at any point in time.&lt;/p&gt;
@@ -67,9 +67,83 @@
 
 &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Slack has since made some &lt;a href=&quot;https://slack.engineering/reducing-slacks-memory-footprint-4480fec7e8eb#.79f8z8m33&quot;&gt;improvements&lt;/a&gt; to the client.&lt;/p&gt;</content><author><name></name></author><summary type="html">Up until last year, I was doing all my work on a late 2008 13” Macbook with eight gigs of ram. It wasn’t impossible to do work, but there were some tasks that would take a long time or would start my fan spinning (like launching Illustrator or watching videos on YouTube).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/slag/slag.png" /></entry><entry><title type="html">WildHacks 2016</title><link href="http://localhost:4000/design/tech/2017/02/07/wildhacks-2016.html" rel="alternate" type="text/html" title="WildHacks 2016" /><published>2017-02-07T20:15:04-05:00</published><updated>2017-02-07T20:15:04-05:00</updated><id>http://localhost:4000/design/tech/2017/02/07/wildhacks-2016</id><content type="html" xml:base="http://localhost:4000/design/tech/2017/02/07/wildhacks-2016.html">&lt;p&gt;It’s a bit of an open secret among hackathon attendees that these events are a “sometimes” thing, in the same way that half a sleeves of Oreos is a “sometimes” food. Hackathons, while fun, do require you to essentially give up an entire weekend to work on a project of questionable permanence under borderline inhumane working conditions.&lt;/p&gt;
 
-&lt;p&gt;So what can we do, as organizers, to convince hackers to come to &lt;em&gt;our&lt;/em&gt; hackathon, that their sleepless, showerless weekend should be spent at &lt;em&gt;our&lt;/em&gt; university in &lt;em&gt;our&lt;/em&gt; student center? This was the question we tried to answer as we developed our branding for the event.&lt;/p&gt;</content><author><name></name></author><summary type="html">It’s a bit of an open secret among hackathon attendees that these events are a “sometimes” thing, in the same way that half a sleeves of Oreos is a “sometimes” food. Hackathons, while fun, do require you to essentially give up an entire weekend to work on a project of questionable permanence under borderline inhumane working conditions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/wh2016/wh2016.png" /></entry><entry><title type="html">Northwestern Undergraduate Research Journal Vol. 11</title><link href="http://localhost:4000/design/2017/02/07/nurj.html" rel="alternate" type="text/html" title="Northwestern Undergraduate Research Journal Vol. 11" /><published>2017-02-07T20:15:04-05:00</published><updated>2017-02-07T20:15:04-05:00</updated><id>http://localhost:4000/design/2017/02/07/nurj</id><content type="html" xml:base="http://localhost:4000/design/2017/02/07/nurj.html">&lt;p&gt;&lt;img src=&quot;/assets/images/nurj/nurj.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;So what can we do, as organizers, to convince hackers to come to &lt;em&gt;our&lt;/em&gt; hackathon, that their sleepless, showerless weekend should be spent at &lt;em&gt;our&lt;/em&gt; university in &lt;em&gt;our&lt;/em&gt; student center? This was the question we tried to answer as we developed our branding for the event.&lt;/p&gt;
+
+&lt;p&gt;There were two things we knew we wanted our attendees to feel. First, we wanted them to be invested in the hackathon, both in the event itself and in what they were building. We were also aware of another common issue among hackathons, which was that beginners often felt intimidated, and as a result either wouldn’t register for the event or would attend but leave halfway through because they didn’t feel like they could compete. This was something that even a lot of us on the organizing team had experienced, and we knew that inclusion was a large part of cultivating a healthy hacker culture.&lt;/p&gt;
+
+&lt;p&gt;How do you get hackers invested in something? To answer that we looked at what hackers were already themselves invested in. This turned out to be pretty obvious: hackers, as the name implies, love to hack. They love to create and to watch things come to life. They are makers for their own sake.&lt;/p&gt;
+
+&lt;p&gt;We wanted to build that sense of investment by providing these hackers with a stake in the event themselves. Our theme, “Build-Your-Own-Hackathon,” was the result. A hackathon put on for hackers, with the hackers.&lt;/p&gt;
+
+&lt;p&gt;To this end, we put out polls on Facebook asking attendees what they wanted from us for certain parts of the event, letting them decide everything from the kinds of programming we put on to the snacks they ate. We also allowed attendees to submit lightning talks they wanted to give at the event, which hackers then voted on.&lt;/p&gt;
+
+&lt;p&gt;Now what about inclusivity? “Hacking” as a term is often associated with sinister images of men wearing hoodies in dark rooms crouched over a laptop screen, glowing green text scrolling across a terminal screen at a mile a minute. This obviously isn’t an accurate depiction of what goes on at a hackathon, but the fact that it exists means we had our work cut out for us.&lt;/p&gt;
+
+&lt;p&gt;We wanted to subvert this image and create an atmosphere where people of all skill levels could feel like they could come and learn something, if not build a project in 36 hours (aside: this is a topic covered very well and in greater depth by game designer Jenny Hsia in her GDC talk, &lt;a href=&quot;http://www.gdcvault.com/play/1024289/Put-a-Face-on-It&quot;&gt;Put a Face On It: The Aesthetics of Cute&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One idea we came upon was to make characters out of common computer science concepts/various tech-related objects.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/sketch.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We also started working toward a unifying theme, which we stumbled upon during a brainstorming session while we were working on our sponsor packet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/sponsorpacket-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s confetti! It was a natural fit, after we thought about it. The confetti made the event seem like a party, a party everyone was invited to. Confetti gave us brevity, excitement, and a versatile visual motif all at the same time.&lt;/p&gt;
+
+&lt;p&gt;For our type treatment, we chose Avenir Next and Space Mono (we originally went with Fira Code as our monospace, the remnants of which you can see in the sponsor packet). We chose Avenir for its simple, friendly forms and Space Mono as its quirky sidekick, an homage to code, but every bit as fun, if not more, as Avenir.&lt;/p&gt;
+
+&lt;p&gt;We got to have some fun with the website too. If you visit &lt;a href=&quot;http://wildhacks.org&quot;&gt;wildhacks.org&lt;/a&gt;, you’ll be greeted with a splash page with a nice little animation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/site-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We also got to make some cool pins starring a few of our computer science characters (an LED and an old-school computer).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/pins.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As well as some &lt;em&gt;sick&lt;/em&gt; shirts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/team.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall, I had a blast working with the team to put on WildHacks. Juggling tech, design and directing was a bit hectic at times, but it was definitely all worth it. Beyond here are just a few more pieces of branding ephemera from the event.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/teaser.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A gif we used to tease the launch of the website to build hype. This was released on social media three days before the launch. We had similar gifs for the next two days as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/promo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Flyer for an event we held on campus to promote the event.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/compy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s compy! A winking computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wh2016/led.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s an LED (this one doesn’t have a fun name, sorry).&lt;/p&gt;</content><author><name></name></author><summary type="html">It’s a bit of an open secret among hackathon attendees that these events are a “sometimes” thing, in the same way that half a sleeves of Oreos is a “sometimes” food. Hackathons, while fun, do require you to essentially give up an entire weekend to work on a project of questionable permanence under borderline inhumane working conditions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/wh2016/wh2016.png" /></entry><entry><title type="html">Northwestern Undergraduate Research Journal Vol. 11</title><link href="http://localhost:4000/design/2017/02/07/nurj.html" rel="alternate" type="text/html" title="Northwestern Undergraduate Research Journal Vol. 11" /><published>2017-02-07T20:15:04-05:00</published><updated>2017-02-07T20:15:04-05:00</updated><id>http://localhost:4000/design/2017/02/07/nurj</id><content type="html" xml:base="http://localhost:4000/design/2017/02/07/nurj.html">&lt;p&gt;&lt;img src=&quot;/assets/images/nurj/nurj.png&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;/assets/images/nurj/spread-1.png&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;/assets/images/nurj/spread-2.png&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;/assets/images/nurj/spread-3.png&quot; alt=&quot;&quot; /&gt;
 &lt;img src=&quot;/assets/images/nurj/spread-4.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/images/nurj/spread-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nurj/nurj.png" /></entry><entry><title type="html">WildHacks 2015</title><link href="http://localhost:4000/design/tech/2016/02/07/wildhacks-2015.html" rel="alternate" type="text/html" title="WildHacks 2015" /><published>2016-02-07T20:15:04-05:00</published><updated>2016-02-07T20:15:04-05:00</updated><id>http://localhost:4000/design/tech/2016/02/07/wildhacks-2015</id><content type="html" xml:base="http://localhost:4000/design/tech/2016/02/07/wildhacks-2015.html">&lt;p&gt;I wrote a post on Medium &lt;a href=&quot;https://medium.com/nu-wildhacks/wildhacks-branding-and-identity-design-of-a-hackathon-5fdcb0b5aa92#.atuxm7ldf&quot;&gt;here&lt;/a&gt; about the process behind designing WildHacks 2015.&lt;/p&gt;</content><author><name></name></author><summary type="html">I wrote a post on Medium here about the process behind designing WildHacks 2015.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/wh2015/wh2015.png" /></entry></feed>
+&lt;img src=&quot;/assets/images/nurj/spread-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nurj/nurj.png" /></entry><entry><title type="html">loft.io</title><link href="http://localhost:4000/design/research/2017/02/07/loft.html" rel="alternate" type="text/html" title="loft.io" /><published>2017-02-07T20:15:04-05:00</published><updated>2017-02-07T20:15:04-05:00</updated><id>http://localhost:4000/design/research/2017/02/07/loft</id><content type="html" xml:base="http://localhost:4000/design/research/2017/02/07/loft.html">&lt;p&gt;Last year, I was part of a team of researchers interested in understanding the experience behind using the &lt;a href=&quot;https://loft.io&quot;&gt;Loft&lt;/a&gt;, an online platform created to help user-centered designers work more quickly and efficiently by scaffolding out the design process.&lt;/p&gt;
+
+&lt;p&gt;We investigated how user-centered design teams worked, how they understood Loft and its role, and what we could to do better scaffold their own processes and help them work more efficiently.&lt;/p&gt;
+
+&lt;p&gt;The Loft has a lot of parts, since it’s meant to provide structure for the user-centered design process in a supportive, non-intrusive way. A few features include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;an activity feed that lets you see what your team has been working on&lt;/li&gt;
+  &lt;li&gt;a project plan, which gives team members an at-a-glance understanding of where their project is&lt;/li&gt;
+  &lt;li&gt;“libraries” for that allow designers to quickly access common “goals” (high-level tasks that a team wants to accomplish, e.g. “user testing”)&lt;/li&gt;
+  &lt;li&gt;support for holding feedback sessions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our process for research was something like:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Determine what our research questions were and form our hypotheses. This usually came from previous work (e.g. we now know that __ happens, could we use __ to help fix that?) or from the software team who were building out features to be tested.&lt;/li&gt;
+  &lt;li&gt;Create a testing procedure. This included a list of questions to ask or tasks we would ask users to perform, depending on what we were investigating. This also included information on what data/information to collect and how to do it.&lt;/li&gt;
+  &lt;li&gt;Combine our data and synthesize a report.&lt;/li&gt;
+  &lt;li&gt;Hand off our findings and start over again.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last year, I was part of a team of researchers interested in understanding the experience behind using the Loft, an online platform created to help user-centered designers work more quickly and efficiently by scaffolding out the design process.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/loft/loft.png" /></entry><entry><title type="html">WildHacks 2015</title><link href="http://localhost:4000/design/tech/2016/02/07/wildhacks-2015.html" rel="alternate" type="text/html" title="WildHacks 2015" /><published>2016-02-07T20:15:04-05:00</published><updated>2016-02-07T20:15:04-05:00</updated><id>http://localhost:4000/design/tech/2016/02/07/wildhacks-2015</id><content type="html" xml:base="http://localhost:4000/design/tech/2016/02/07/wildhacks-2015.html">&lt;p&gt;I wrote a post on Medium &lt;a href=&quot;https://medium.com/nu-wildhacks/wildhacks-branding-and-identity-design-of-a-hackathon-5fdcb0b5aa92#.atuxm7ldf&quot;&gt;here&lt;/a&gt; about the process behind designing WildHacks 2015.&lt;/p&gt;</content><author><name></name></author><summary type="html">I wrote a post on Medium here about the process behind designing WildHacks 2015.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/wh2015/wh2015.png" /></entry></feed>
