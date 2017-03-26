@@ -199,6 +199,17 @@ img {
   padding-left: inherit;
 }
 
+.post-container h1,
+.post-container h2,
+.post-container h3,
+.post-container h3,
+.post-container h4,
+.post-container h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Roboto Mono", monospace;
+}
+
 .header-sticky {
   @include past($break-small) {
     position: fixed;
