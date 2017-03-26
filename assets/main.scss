@@ -68,6 +68,8 @@ code {
 
 img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .serif {
@@ -189,7 +191,7 @@ img {
 
   @include past($break-small) {
     min-width: 500px;
-    width: 50%;
+    max-width: 60%;
     padding-left: 2rem;
   }
 }

@@ -39,7 +39,9 @@ code {
   font-family: "Roboto Mono", monospace; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; }
 
 .serif {
   font-family: Athelas, "Palatino", "Times", "Georgia", serif;
@@ -137,7 +139,7 @@ img {
   @media screen and (min-width: 720px) {
     .post-container {
       min-width: 500px;
-      width: 50%;
+      max-width: 60%;
       padding-left: 2rem; } }
 
 .post-container ul {
