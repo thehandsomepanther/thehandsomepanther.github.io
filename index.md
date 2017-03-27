@@ -44,11 +44,13 @@ permalink: /
             <p class="serif">{{ post.description }}</p>
             <a class="mono project-link" href="{{ post.url }}">read about it</a>
             {% if post.link %}
-              <a class="mono project-link" target="_blank" href="{{ post.link | escape }}">see it</a>
+              <a class="mono project-link" target="_blank" href="{{ post.link | escape }}">check it out</a>
             {% endif %}
           </div>
           <div class="project-details {{ post.color }}">
-            <img src="{{ post.image }}">
+            {% if post.image %}
+              <img src="{{ post.image }}">
+            {% endif %}
           </div>
         {% endunless %}
       {% endfor %}
