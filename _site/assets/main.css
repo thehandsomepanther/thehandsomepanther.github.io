@@ -13,8 +13,17 @@
 .bg-pink {
   background-color: #FFDFDF; }
 
+.bg-red {
+  background-color: #ff8cad; }
+
 .bg-yellow {
   background-color: #FFD700; }
+
+.bg-purple {
+  background-color: #bccbff; }
+
+.bg-orange {
+  background-color: #ffd27b; }
 
 body {
   margin: 0;

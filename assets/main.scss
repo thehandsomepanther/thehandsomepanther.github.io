@@ -6,8 +6,11 @@ $color-blue: #CDECFF;
 $color-offwhite: #fbfbfb;
 $color-green: #9EEBCF;
 $color-pink: #FFDFDF;
+$color-red: #ff8cad;
 $color-yellow: #FFD700;
 $color-black: #111111;
+$color-purple: #bccbff;
+$color-orange: #ffd27b;
 
 .bg-beige {
   background-color: $color-beige;
@@ -29,8 +32,20 @@ $color-black: #111111;
   background-color: $color-pink;
 }
 
+.bg-red {
+  background-color: $color-red;
+}
+
 .bg-yellow {
   background-color: $color-yellow;
+}
+
+.bg-purple {
+  background-color: $color-purple;
+}
+
+.bg-orange {
+  background-color: $color-orange;
 }
 
 @mixin past($media) {
