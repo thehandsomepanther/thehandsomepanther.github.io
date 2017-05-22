@@ -43,7 +43,11 @@ permalink: /
               <p class="mono category category-research">Research</p>
             {% endif %}
             <p class="serif">{{ post.description }}</p>
-            <a class="mono project-link" href="{{ post.url }}">read about it</a>
+            {% if post.external %}
+              <a target="_blank" class="mono project-link" href="{{ post.external }}">read about it</a>
+            {% else %}
+                <a class="mono project-link" href="{{ post.url }}">read about it</a>
+            {% endif %}
             {% if post.link %}
               <a class="mono project-link" target="_blank" href="{{ post.link | escape }}">check it out</a>
             {% endif %}
