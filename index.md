@@ -11,6 +11,7 @@ permalink: /
       <li><a href="/about">About</a></li>
       <li><a target="_blank" href="https://twitter.com/unfollowjoshshi">Twitter</a></li>
       <li><a target="_blank" href="https://github.com/thehandsomepanther">Github</a></li>
+      <li><a target="_blank" href="https://medium.com/@joshshi/latest">Writing</a></li>
     </ul>
     <ul>
       <p>Is:</p>
