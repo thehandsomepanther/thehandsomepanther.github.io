@@ -1,3 +1,22 @@
+(function() {
+    var throttle = function(type, name, obj) {
+        obj = obj || window;
+        var running = false;
+        var func = function() {
+            if (running) { return; }
+            running = true;
+             requestAnimationFrame(function() {
+                obj.dispatchEvent(new CustomEvent(name));
+                running = false;
+            });
+        };
+        obj.addEventListener(type, func);
+    };
+
+    /* init - you can init any event */
+    throttle("resize", "optimizedResize");
+})();
+
 String.prototype.width = function(font) {
     var f = font || '12px arial',
         o = $('<span>' + this + '</span>')
@@ -92,39 +111,7 @@ var drawModes = {
 var mode = drawModes.lines
 
 $(document).ready(function() {
-    var font = '12px Space Mono'
-    var filler = '&nbsp;'
-    var width = Math.floor(window.innerWidth / filler.width(font))
-    var height = Math.floor(window.innerHeight / filler.height(font))
-
-    for (var textElement of $('.text')) {
-        var frag = document.createDocumentFragment()
-        var parent = frag
-        var text = textElement.innerHTML
-        if (textElement.closest('a')) {
-            parent = textElement.closest('a')
-        }
-
-        for (var ch of text) {
-            var span = document.createElement('span')
-            span.innerHTML = ch
-            parent.appendChild(span)
-        }
-
-        if (parent !== frag) {
-            frag.appendChild(parent)
-        }
-
-        for (var i = 0; i < width - text.length; i++) {
-            var span = document.createElement('span')
-            span.innerHTML = filler
-            frag.appendChild(span)
-        }
-
-        textElement.remove()
-        $('body').append(frag)
-        document.querySelector('body').style.display = 'block'
-    }
+    drawScreen()
 
     // var frag = document.createDocumentFragment()
     // for (var i = 0; i < width * height; i++) {
@@ -134,10 +121,8 @@ $(document).ready(function() {
     // }
     //
     // $('body').append(frag)
-    $('span').on('mouseover', draw)
-    $('select').on('change', changeMode)
-    $('a[class^="link-"]').on('mouseover', showImage)
-    $('a[class^="link-"]').on('mouseleave', hideImage)
+
+    window.addEventListener("optimizedResize", drawScreen);
 })
 
 function evaluate(a, b) {
@@ -193,4 +178,46 @@ function hideImage(e) {
     for (var img of document.querySelectorAll('img[class^="img-"]')) {
         img.style.display = 'none';
     }
+}
+
+function drawScreen() {
+    document.querySelector('.screen').innerHTML = ''
+
+    var font = '12px Space Mono'
+    var filler = '&nbsp;'
+    var width = Math.floor(window.innerWidth / filler.width(font))
+    var height = Math.floor(window.innerHeight / filler.height(font))
+
+    for (var textElement of $('.text')) {
+        var frag = document.createDocumentFragment()
+        var parent = frag
+        var text = textElement.innerHTML
+        if (textElement.closest('a')) {
+            parent = document.createElement('a')
+        }
+
+        for (var ch of text) {
+            var span = document.createElement('span')
+            span.innerHTML = ch
+            parent.appendChild(span)
+        }
+
+        if (parent !== frag) {
+            frag.appendChild(parent)
+        }
+
+        for (var i = 0; i < width - text.length; i++) {
+            var span = document.createElement('span')
+            span.innerHTML = filler
+            frag.appendChild(span)
+        }
+
+        $('.screen').append(frag)
+        document.querySelector('body').style.display = 'block'
+    }
+
+    $('span').on('mouseover', draw)
+    $('select').on('change', changeMode)
+    $('a[class^="link-"]').on('mouseover', showImage)
+    $('a[class^="link-"]').on('mouseleave', hideImage)
 }

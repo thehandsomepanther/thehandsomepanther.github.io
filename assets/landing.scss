@@ -6,6 +6,10 @@ body {
     cursor: url(../assets/images/pen.png), auto;
 }
 
+.text {
+    display: none;
+}
+
 span, label {
     font-size: 12px;
     font-family: 'Space Mono', monospace;
@@ -18,6 +22,16 @@ span {
     width: 7px;
     line-height: 12px;
     height: 12px;
+}
+
+.mode {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+.mode label {
+    z-index: -1;
 }
 
 body {
