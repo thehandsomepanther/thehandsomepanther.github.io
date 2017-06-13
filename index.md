@@ -13,6 +13,7 @@ permalink: /
         <option value="twinkle">Twinkle</option>
         <option value="redacted">▇▇▇▇▇REDACTED▇▇▇▇▇</option>
     </select>
+    <input type="button" name="reset" value="Clear Screen">
 </div>
 <div>
     <span class="text"></span>

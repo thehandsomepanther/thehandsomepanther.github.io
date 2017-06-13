@@ -112,16 +112,7 @@ var mode = drawModes.lines
 
 $(document).ready(function() {
     drawScreen()
-
-    // var frag = document.createDocumentFragment()
-    // for (var i = 0; i < width * height; i++) {
-    //     var span = document.createElement('span')
-    //     span.innerHTML = filler
-    //     frag.appendChild(span)
-    // }
-    //
-    // $('body').append(frag)
-
+    document.querySelector('input[name="reset"]').addEventListener('mousedown', drawScreen)
     window.addEventListener("optimizedResize", drawScreen);
 })
 
