@@ -181,7 +181,7 @@ function hideImage(e) {
 }
 
 function drawScreen() {
-    document.querySelector('.screen').innerHTML = ''
+    document.querySelector('.canvas').innerHTML = ''
 
     var font = '12px Space Mono'
     var filler = '&nbsp;'
@@ -193,7 +193,10 @@ function drawScreen() {
         var parent = frag
         var text = textElement.innerHTML
         if (textElement.closest('a')) {
+            var link = textElement.closest('a')
             parent = document.createElement('a')
+            parent.href = link.href
+            parent.className = link.className
         }
 
         for (var ch of text) {
@@ -212,11 +215,11 @@ function drawScreen() {
             frag.appendChild(span)
         }
 
-        $('.screen').append(frag)
+        $('.canvas').append(frag)
         document.querySelector('body').style.display = 'block'
     }
 
-    $('span').on('mouseover', draw)
+    $('.canvas span').on('mouseover', draw)
     $('select').on('change', changeMode)
     $('a[class^="link-"]').on('mouseover', showImage)
     $('a[class^="link-"]').on('mouseleave', hideImage)

@@ -55,7 +55,7 @@ permalink: /
         {% endunless %}
     {% endfor %}
 </div>
-<div class="screen">
+<div class="canvas">
 
 </div>
 
