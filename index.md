@@ -4,61 +4,47 @@ title: Josh Shi
 permalink: /
 ---
 
-<div class="container">
-  <div class="info-container mono">
-    <p><a href="/">Josh Shi</a></p>
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a target="_blank" href="https://twitter.com/unfollowjoshshi">Twitter</a></li>
-      <li><a target="_blank" href="https://github.com/thehandsomepanther">Github</a></li>
-      <li><a target="_blank" href="https://medium.com/@joshshi/latest">Writing</a></li>
-    </ul>
-    <ul>
-      <p>Is:</p>
-      <li>Editor-in-Chief, Northwestern Undergraduate Research Journal</li>
-      <li>Student Fellow, Knight Lab</li>
-      <li>Teaching Assistant, NUvention</li>
-    </ul>
-    <ul>
-      <p>Was:</p>
-      <li>Director, WildHacks</li>
-      <li>Teaching Assistant, Human-Computer Interaction</li>
-      <li>Software Engineer Intern, Groupon</li>
-      <li>Creative Manager, DesignWorks</li>
-    </ul>
-  </div><div class="projects-container">
-    <p class="mono">Projects</p>
-    <div class="projects">
-      {% for post in site.posts %}
-        {% unless post.categories contains 'unpublished' %}
-          <div class="project-title">
-            <a class="mono" href="{{ post.url }}">{{ post.title }}</a>
-            {% if post.categories contains 'design'%}
-              <p class="mono category category-design">Design</p>
-            {% endif %}
-            {% if post.categories contains 'tech'%}
-              <p class="mono category category-tech">Tech</p>
-            {% endif %}
-            {% if post.categories contains 'research'%}
-              <p class="mono category category-research">Research</p>
-            {% endif %}
-            <p class="serif">{{ post.description }}</p>
-            {% if post.external %}
-              <a target="_blank" class="mono project-link" href="{{ post.external }}">read about it</a>
-            {% else %}
-                <a class="mono project-link" href="{{ post.url }}">read about it</a>
-            {% endif %}
-            {% if post.link %}
-              <a class="mono project-link" target="_blank" href="{{ post.link | escape }}">check it out</a>
-            {% endif %}
-          </div>
-          <div class="project-details {{ post.color }}">
-            {% if post.image %}
-              <img src="{{ post.image }}">
-            {% endif %}
-          </div>
-        {% endunless %}
-      {% endfor %}
-    </div>
-  </div>
+<div>
+    <select name="draw">
+        <option value="lines">Lines</option>
+        <option value="arrows">Arrows</option>
+        <option value="dots">Dots</option>
+        <option value="twinkle">Twinkle</option>
+        <option value="redacted">▇▇▇▇▇REDACTED▇▇▇▇▇</option>
+    </select>
 </div>
+<span class="text">Josh Shi</span>
+<span class="text">Studying Computer Science at Northwestern University</span>
+<span class="text"></span>
+<span class="text">Links</span>
+
+<div><a href="https://twitter.com/unfollowjoshshi"><span class="text">Twitter →</span></a></div>
+<div><a href="https://github.com/thehandsomepanther"><span class="text">Github →</span></a></div>
+<div><a href="https://medium.com/@joshshi/latest"><span class="text">Writing →</span></a></div>
+<span class="text"></span>
+<span class="text">Is:</span>
+<span class="text">Editor-in-Chief, Northwestern Undergradaute Research Journal</span>
+<span class="text">Student Fellow, Knight Lab</span>
+<span class="text">Teaching Assistant, NUvention</span>
+<span class="text"></span>
+<span class="text">Was:</span>
+<span class="text">Director, WildHacks</span>
+<span class="text">Software Engineer Intern, Groupon</span>
+<span class="text">Teaching Assistant, Human-Computer Interaction</span>
+<span class="text"></span>
+<span class="text">Projects</span>
+<div>
+{% for post in site.posts %}
+    {% unless post.categories contains 'unpublished' %}
+        {% if post.image %}
+            <div><img class="img-{{ post.uid }}" src="{{ post.image }}"></div>
+        {% endif %}
+
+        <div><a class="link-{{ post.uid }}" href="{{ post.url }}"><span class="text">{{ post.title }}</span></a></div>
+        <div><span class="text">{{ post.description }}</span></div>
+    {% endunless %}
+{% endfor %}
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="scripts/index.js"></script>
