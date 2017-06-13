@@ -45,7 +45,7 @@ code {
   font-size: 1rem;
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Space Mono", monospace; }
 
 img {
   max-width: 100%;
@@ -58,7 +58,7 @@ img {
   line-height: 1.75rem; }
 
 .mono {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Space Mono", monospace;
   font-size: .8rem;
   line-height: 1.5rem; }
 
@@ -163,7 +163,7 @@ img {
 .post-container h5 {
   font-size: 1rem;
   font-weight: normal;
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Space Mono", monospace; }
 
 @media screen and (min-width: 720px) {
   .header-sticky {

@@ -1,0 +1,72 @@
+.canvas {
+  display: none; }
+
+.text {
+  display: block;
+  line-height: 20px; }
+
+.text:empty {
+  height: 20px; }
+
+span, label {
+  display: block;
+  font-size: 12px;
+  font-family: 'Space Mono', monospace;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.mode {
+  display: none; }
+
+body {
+  width: 100%;
+  overflow-wrap: break-word; }
+
+img {
+  display: none;
+  width: 100%;
+  max-width: 60vw;
+  position: fixed;
+  right: 10vw;
+  top: 50vh;
+  transform: translateY(-50%);
+  z-index: -1; }
+
+@media (min-width: 440px) {
+  .canvas {
+    display: block; }
+
+  body {
+    display: none;
+    cursor: url(../assets/images/pen.png), auto; }
+
+  .text {
+    display: none; }
+
+  span, label {
+    display: inline-block; }
+
+  span {
+    width: 7px;
+    line-height: 12px;
+    height: 12px; }
+
+  a span {
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+    background-size: 2px 1px; }
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    text-decoration: none; }
+
+  .mode {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 8px; }
+
+  .mode label {
+    z-index: -1; } }
