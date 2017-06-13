@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: landing
 title: Josh Shi
 permalink: /
 ---
@@ -18,11 +18,12 @@ permalink: /
 <span class="text"></span>
 <span class="text">Links</span>
 
-<div><a href="https://twitter.com/unfollowjoshshi"><span class="text">Twitter →</span></a></div>
-<div><a href="https://github.com/thehandsomepanther"><span class="text">Github →</span></a></div>
-<div><a href="https://medium.com/@joshshi/latest"><span class="text">Writing →</span></a></div>
+<div><a href="https://twitter.com/unfollowjoshshi" target="_blank"><span class="text">Twitter →</span></a></div>
+<div><a href="https://github.com/thehandsomepanther" target="_blank"><span class="text">Github →</span></a></div>
+<div><a href="https://medium.com/@joshshi/latest" target="_blank"><span class="text">Writing →</span></a></div>
 <span class="text"></span>
 <span class="text">Is:</span>
+<span class="text">Software Engineer Intern, Box</span>
 <span class="text">Editor-in-Chief, Northwestern Undergradaute Research Journal</span>
 <span class="text">Student Fellow, Knight Lab</span>
 <span class="text">Teaching Assistant, NUvention</span>
@@ -40,8 +41,14 @@ permalink: /
             <div><img class="img-{{ post.uid }}" src="{{ post.image }}"></div>
         {% endif %}
 
-        <div><a class="link-{{ post.uid }}" href="{{ post.url }}"><span class="text">{{ post.title }}</span></a></div>
+        {% if post.external %}
+            <div><a class="link-{{ post.uid }}" href="{{ post.external }}"><span class="text">{{ post.title }} →</span></a></div>
+        {% else %}
+            <div><a class="link-{{ post.uid }}" href="{{ post.url }}"><span class="text">{{ post.title }} →</span></a></div>
+        {% endif %}
         <div><span class="text">{{ post.description }}</span></div>
+
+        <div><span class="text"></span></div>
     {% endunless %}
 {% endfor %}
 </div>
