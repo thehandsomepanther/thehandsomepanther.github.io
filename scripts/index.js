@@ -173,7 +173,7 @@ function hideImage(e) {
 }
 
 function drawScreen() {
-    // $('.canvas span').off()
+    $('.canvas span').off()
     document.querySelector('.canvas').innerHTML = ''
 
     var font = '12px Space Mono'
