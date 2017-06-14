@@ -113,6 +113,7 @@ var mode = drawModes.lines
 $(document).ready(function() {
     drawScreen()
     document.querySelector('input[name="reset"]').addEventListener('mousedown', drawScreen)
+    $('select').on('change', changeMode)
     window.addEventListener("optimizedResize", drawScreen);
 })
 
@@ -172,6 +173,7 @@ function hideImage(e) {
 }
 
 function drawScreen() {
+    // $('.canvas span').off()
     document.querySelector('.canvas').innerHTML = ''
 
     var font = '12px Space Mono'
@@ -211,7 +213,6 @@ function drawScreen() {
     }
 
     $('.canvas span').on('mouseover', draw)
-    $('select').on('change', changeMode)
     $('a[class^="link-"]').on('mouseover', showImage)
     $('a[class^="link-"]').on('mouseleave', hideImage)
 }
