@@ -298,11 +298,17 @@ function movePen(e) {
 
 var penActive = false
 var penElement = document.querySelector('.pen')
+var oldWidth
 document.addEventListener('DOMContentLoaded', function() {
     drawScreen()
     document.querySelector('input[name="reset"]').addEventListener('mousedown', drawScreen)
     document.querySelector('select').addEventListener('change', changeMode)
-    window.addEventListener("optimizedResize", drawScreen)
+    window.addEventListener("optimizedResize", function() {
+        if (window.innerWidth !== oldWidth) {
+            drawScreen()
+        }
+        oldWidth = window.innerWidth
+    })
 
     penElement.addEventListener('touchstart', function() { penActive = true })
     penElement.addEventListener('touchend', function() { penActive = false })
