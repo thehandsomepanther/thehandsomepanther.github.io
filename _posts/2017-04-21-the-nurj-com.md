@@ -7,6 +7,7 @@ date: 2017-04-22 19:15:04 -0600
 uid: thenurj
 link: http://www.thenurj.com
 image: "assets/images/thenurj.com/nurj.jpg"
+video: "assets/images/thenurj.com/nurj.mp4"
 ---
 Recently, I've been working on creating the website for the Northwestern Undergraduate Research Journal (NURJ). The project spanned a few months and has taught me a lot, especially about making technical decisions with non-technical people in mind. The website is live at [thenurj.com](http://www.thenurj.com) and you can find the code behind it on [Github](https://github.com/nurj/nurj).
 

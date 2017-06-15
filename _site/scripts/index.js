@@ -163,17 +163,25 @@ function changeMode(e) {
 
 function showImage(e) {
     var imgClass = '.img-' + e.currentTarget.className.split('-')[1]
-    document.querySelector(imgClass).style.display = 'block';
+    var imgElem = document.querySelector(imgClass);
+    imgElem.style.display = 'block';
+    if (imgElem.tagName == 'VIDEO') {
+        imgElem.play()
+    }
 }
 
 function hideImage(e) {
-    for (var img of document.querySelectorAll('img[class^="img-"]')) {
-        img.style.display = 'none';
+    for (var imgElem of document.querySelectorAll('[class^="img-"]')) {
+        imgElem.style.display = 'none';
+
+        if (imgElem.tagName == 'video') {
+            imgElem.pause()
+        }
     }
 }
 
 function drawScreen() {
-    // $('.canvas span').off()
+    $('.canvas span').off()
     document.querySelector('.canvas').innerHTML = ''
 
     var font = '12px Space Mono'

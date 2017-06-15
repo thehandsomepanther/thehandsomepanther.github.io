@@ -22,7 +22,7 @@ body {
   width: 100%;
   overflow-wrap: break-word; }
 
-img {
+img, video {
   display: none;
   width: 100%;
   max-width: 60vw;

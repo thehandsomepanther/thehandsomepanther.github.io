@@ -41,7 +41,9 @@ permalink: /
     <span class="text">Projects</span>
     {% for post in site.posts %}
         {% unless post.categories contains 'unpublished' %}
-            {% if post.image %}
+            {% if post.video %}
+                <video class="img-{{ post.uid }}" src="{{ post.video }}" loop poster="{{ post.image }}"></video>
+            {% elsif post.image %}
                 <img class="img-{{ post.uid }}" src="{{ post.image }}">
             {% endif %}
 
