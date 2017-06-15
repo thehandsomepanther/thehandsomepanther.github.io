@@ -21,6 +21,7 @@ permalink: /
 <div>
     <span class="text"></span>
     <span class="text"></span>
+    <span class="text"></span>
     <span class="text">Josh Shi</span>
     <span class="text">Studying Computer Science at Northwestern University</span>
     <span class="text"></span>
