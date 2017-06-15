@@ -270,8 +270,9 @@ function triggerEvent(el, type, obj){
 
 function movePen(e) {
     e.preventDefault()
-    var x, y
     if (penActive) {
+        var x, y
+
         if (e.type === 'touchmove') {
             x = e.touches[0].pageX - 48
             y = e.touches[0].pageY - 48
@@ -279,20 +280,20 @@ function movePen(e) {
             x = e.pageX - 48
             y = e.pageY - 48
         }
-    }
 
-    penElement.style.left = "" + x + "px";
-    penElement.style.top = "" + y + "px";
+        penElement.style.left = "" + x + "px";
+        penElement.style.top = "" + y + "px";
+        rect = penElement.getBoundingClientRect()
+        var span = allElementsFromPoint(rect.left, rect.top).filter(function(el) {
+            return el.tagName === 'SPAN'
+        })[0]
 
-    var span = allElementsFromPoint(x, y).filter(function(el) {
-        return el.tagName === 'SPAN'
-    })[0]
-
-    if (span !== undefined) {
-        triggerEvent(span, 'mouseover', {
-            pageX: x,
-            pageY: y
-        })
+        if (span !== undefined) {
+            triggerEvent(span, 'mouseover', {
+                pageX: rect.left,
+                pageY: rect.top
+            })
+        }
     }
 }
 
