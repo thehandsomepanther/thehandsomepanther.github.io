@@ -172,27 +172,47 @@ function drawScreen() {
     var width = Math.floor(window.innerWidth / 7)
 
     for (var textElement of document.querySelectorAll('.text')) {
+        var length = 0
         var frag = document.createDocumentFragment()
         var parent = frag
         var text = textElement.innerHTML
-        if (textElement.closest('a')) {
+        var words = text.split(" ")
+
+        if (textElement.closest('a') !== null) {
             var link = textElement.closest('a')
             parent = document.createElement('a')
             parent.href = link.href
             parent.className = link.className
         }
 
-        for (var ch of text) {
+        for (var word of words) {
+            if (length + word.length > width) {
+                for (var i = 0; i < width - length; i++) {
+                    var span = document.createElement('span')
+                    span.innerHTML = filler
+                    frag.appendChild(span)
+                }
+
+                length = 0
+            }
+
+            for (var ch of word) {
+                var span = document.createElement('span')
+                span.innerHTML = ch
+                parent.appendChild(span)
+            }
+
             var span = document.createElement('span')
-            span.innerHTML = ch
+            span.innerHTML = filler
             parent.appendChild(span)
+            length += word.length + 1
         }
 
         if (parent !== frag) {
             frag.appendChild(parent)
         }
 
-        for (var i = 0; i < width - text.length; i++) {
+        for (var i = 0; i < width - length; i++) {
             var span = document.createElement('span')
             span.innerHTML = filler
             frag.appendChild(span)

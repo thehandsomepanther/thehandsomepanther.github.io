@@ -15,6 +15,9 @@ permalink: /
     </select>
     <input type="button" name="reset" value="Clear Screen">
 </div>
+<div class="pen">
+    <img src="/assets/images/pen.png" alt="pen">
+</div>
 <div>
     <span class="text"></span>
     <span class="text"></span>

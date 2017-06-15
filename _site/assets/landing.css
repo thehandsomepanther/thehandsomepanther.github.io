@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  background-color: #fbfbfb;
+  overflow-wrap: break-word; }
+
 .canvas {
   display: none; }
 
@@ -18,11 +23,7 @@ span, label {
 .mode {
   display: none; }
 
-body {
-  width: 100%;
-  overflow-wrap: break-word; }
-
-img, video {
+*[class^="img-"] {
   display: none;
   width: 100%;
   max-width: 60vw;
@@ -32,45 +33,47 @@ img, video {
   transform: translateY(-50%);
   z-index: -1; }
 
-@media (min-width: 440px) {
-  .canvas {
-    display: block; }
+body {
+  display: none;
+  cursor: url(../assets/images/pen.png), auto; }
 
-  body {
-    display: none;
-    cursor: url(../assets/images/pen.png), auto; }
+.canvas {
+  display: block; }
 
-  .text {
-    display: none; }
+.pen {
+  display: none; }
 
-  span, label {
-    display: inline-block; }
+.text {
+  display: none; }
 
-  span {
-    width: 7px;
-    line-height: 12px;
-    height: 12px; }
+span, label {
+  display: inline-block; }
 
-  a span {
-    text-decoration: none; }
+span {
+  width: 7px;
+  line-height: 12px;
+  height: 12px; }
 
-  a {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
-    background-size: 2px 1px;
-    background-position: 0 17px;
-    background-repeat: repeat-x; }
+a span {
+  text-decoration: none; }
 
-  a,
-  a:active,
-  a:hover,
-  a:visited {
-    text-decoration: none; }
+a {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+  background-size: 2px 1px;
+  background-position: 0 17px;
+  background-repeat: repeat-x; }
 
-  .mode {
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 8px; }
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none; }
 
-  .mode label {
-    z-index: -1; } }
+.mode {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 8px; }
+
+.mode label {
+  z-index: -1; }
