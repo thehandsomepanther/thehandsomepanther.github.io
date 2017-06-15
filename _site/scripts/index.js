@@ -163,10 +163,13 @@ function changeMode(e) {
 
 function showImage(e) {
     var imgClass = '.img-' + e.currentTarget.className.split('-')[1]
-    var imgElem = document.querySelector(imgClass);
-    imgElem.style.display = 'block';
-    if (imgElem.tagName == 'VIDEO') {
-        imgElem.play()
+    var imgElem = document.querySelector(imgClass)
+
+    if (imgElem !== null) {
+        imgElem.style.display = 'block';
+        if (imgElem.tagName === 'VIDEO') {
+            imgElem.play()
+        }
     }
 }
 
@@ -174,7 +177,7 @@ function hideImage(e) {
     for (var imgElem of document.querySelectorAll('[class^="img-"]')) {
         imgElem.style.display = 'none';
 
-        if (imgElem.tagName == 'video') {
+        if (imgElem.tagName === 'VIDEO') {
             imgElem.pause()
         }
     }
