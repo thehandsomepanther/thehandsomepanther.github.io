@@ -273,11 +273,11 @@ function movePen(e) {
     var x, y
     if (penActive) {
         if (e.type === 'touchmove') {
-            x = e.touches[0].pageX
-            y = e.touches[0].pageY
+            x = e.touches[0].pageX - 48
+            y = e.touches[0].pageY - 48
         } else {
-            x = e.pageX
-            y = e.pageY
+            x = e.pageX - 48
+            y = e.pageY - 48
         }
     }
 

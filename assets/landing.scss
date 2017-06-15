@@ -79,8 +79,10 @@ a:visited {
     .pen {
         position: absolute;
         display: block;
-        height: 30px;
-        width: 30px;
+        height: 96px;
+        width: 96px;
         z-index: 999;
+        top: 150px;
+        right: 30px;
     }
 }
