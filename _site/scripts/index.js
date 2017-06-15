@@ -3,9 +3,11 @@
         obj = obj || window;
         var running = false;
         var func = function() {
-            if (running) { return; }
+            if (running) {
+                return;
+            }
             running = true;
-             requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
                 obj.dispatchEvent(new CustomEvent(name));
                 running = false;
             });
@@ -17,37 +19,12 @@
     throttle("resize", "optimizedResize");
 })();
 
-String.prototype.width = function(font) {
-    var f = font || '12px arial',
-        o = $('<span>' + this + '</span>')
-        .css({
-            'position': 'absolute',
-            'float': 'left',
-            'white-space': 'nowrap',
-            'visibility': 'hidden',
-            'font': f
-        })
-        .appendTo($('body')),
-        w = o.width();
-    o.remove();
-    return w;
-}
-
-String.prototype.height = function(font) {
-    var f = font || '12px arial',
-        o = $('<span>' + this + '</span>')
-        .css({
-            'position': 'absolute',
-            'float': 'left',
-            'white-space': 'nowrap',
-            'visibility': 'hidden',
-            'font': f
-        })
-        .appendTo($('body')),
-
-        h = o.height();
-    o.remove();
-    return h;
+function removeEventListeners(e) {
+    var clone = e.cloneNode();
+    while (e.firstChild) {
+        clone.appendChild(e.lastChild);
+    }
+    e.parentNode.replaceChild(clone, e);
 }
 
 var THRESHOLD = 5;
@@ -110,10 +87,10 @@ var drawModes = {
 }
 var mode = drawModes.lines
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
     drawScreen()
     document.querySelector('input[name="reset"]').addEventListener('mousedown', drawScreen)
-    $('select').on('change', changeMode)
+    document.querySelector('select').addEventListener('change', changeMode)
     window.addEventListener("optimizedResize", drawScreen);
 })
 
@@ -184,15 +161,17 @@ function hideImage(e) {
 }
 
 function drawScreen() {
-    $('.canvas span').off()
+    var spans = document.querySelectorAll('.canvas span')
+    for (var span of spans) {
+        removeEventListeners(span)
+    }
     document.querySelector('.canvas').innerHTML = ''
 
     var font = '12px Space Mono'
     var filler = '&nbsp;'
-    var width = Math.floor(window.innerWidth / filler.width(font))
-    var height = Math.floor(window.innerHeight / filler.height(font))
+    var width = Math.floor(window.innerWidth / 7)
 
-    for (var textElement of $('.text')) {
+    for (var textElement of document.querySelectorAll('.text')) {
         var frag = document.createDocumentFragment()
         var parent = frag
         var text = textElement.innerHTML
@@ -219,11 +198,18 @@ function drawScreen() {
             frag.appendChild(span)
         }
 
-        $('.canvas').append(frag)
+        document.querySelector('.canvas').appendChild(frag)
         document.querySelector('body').style.display = 'block'
     }
 
-    $('.canvas span').on('mouseover', draw)
-    $('a[class^="link-"]').on('mouseover', showImage)
-    $('a[class^="link-"]').on('mouseleave', hideImage)
+    var spans = document.querySelectorAll('.canvas span')
+    for (var span of spans) {
+        span.addEventListener('mouseover', draw)
+    }
+
+    var links = document.querySelectorAll('a[class^="link-"]')
+    for (var link of links) {
+        link.addEventListener('mouseover', showImage)
+        link.addEventListener('mouseleave', hideImage)
+    }
 }
