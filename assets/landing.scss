@@ -4,16 +4,13 @@
 body {
     width: 100%;
     background-color: #fbfbfb;
-    overflow-wrap: break-word;
-}
-
-.canvas {
+    overflow-x: hidden;
     display: none;
+    cursor: url(../assets/images/pen.png), auto;
 }
 
 .text {
-    display: block;
-    line-height: 20px;
+    display: none;
 }
 
 .text:empty {
@@ -21,15 +18,17 @@ body {
 }
 
 span, label {
-    display: block;
+    display: inline-block;
     font-size: 12px;
     font-family: 'Space Mono', monospace;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.mode {
-    display: none;
+span {
+    width: 7px;
+    line-height: 12px;
+    height: 12px;
 }
 
 *[class^="img-"] {
@@ -41,33 +40,6 @@ span, label {
     top: 50vh;
     transform: translateY(-50%);
     z-index: -1;
-}
-
-body {
-    display: none;
-    cursor: url(../assets/images/pen.png), auto;
-}
-
-.canvas {
-    display: block;
-}
-
-.pen {
-    display: none;
-}
-
-.text {
-    display: none;
-}
-
-span, label {
-    display: inline-block;
-}
-
-span {
-    width: 7px;
-    line-height: 12px;
-    height: 12px;
 }
 
 a span {
@@ -97,4 +69,18 @@ a:visited {
 
 .mode label {
     z-index: -1;
+}
+
+.pen {
+    display: none;
+}
+
+@media (max-width: 414px) {
+    .pen {
+        position: absolute;
+        display: block;
+        height: 30px;
+        width: 30px;
+        z-index: 999;
+    }
 }
