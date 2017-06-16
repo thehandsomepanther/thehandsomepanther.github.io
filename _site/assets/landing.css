@@ -60,12 +60,11 @@ a:visited {
 .pen {
   display: none; }
 
-@media (max-width: 414px) {
-  .pen {
-    position: absolute;
-    display: block;
-    height: 96px;
-    width: 96px;
-    z-index: 999;
-    top: 150px;
-    right: 30px; } }
+.pen.is-shown {
+  position: absolute;
+  display: block;
+  height: 96px;
+  width: 96px;
+  z-index: 999;
+  top: 150px;
+  right: 30px; }
