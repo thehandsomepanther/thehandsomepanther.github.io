@@ -181,7 +181,9 @@ function drawScreen() {
 
     var font = '12px Space Mono'
     var filler = '&nbsp;'
-    var width = Math.floor(window.innerWidth / 7)
+    var rect = document.querySelector('body').getBoundingClientRect()
+    console.log(rect);
+    var width = Math.floor(rect.width / 7)
 
     for (var textElement of document.querySelectorAll('.text')) {
         var length = 0
@@ -303,10 +305,6 @@ var oldWidth
 document.addEventListener('DOMContentLoaded', function() {
     drawScreen()
 
-    if ('ontouchstart' in window) {
-        penElement.className += ' is-shown'
-    }
-
     document.querySelector('input[name="reset"]').addEventListener('mousedown', drawScreen)
     document.querySelector('select').addEventListener('change', changeMode)
     window.addEventListener("optimizedResize", function() {
@@ -316,10 +314,13 @@ document.addEventListener('DOMContentLoaded', function() {
         oldWidth = window.innerWidth
     })
 
-    penElement.addEventListener('touchstart', function() { penActive = true })
-    penElement.addEventListener('touchend', function() { penActive = false })
-    penElement.addEventListener('touchmove', movePen)
-    penElement.addEventListener('mousedown', function() { penActive = true })
-    penElement.addEventListener('mouseup', function() { penActive = false })
-    penElement.addEventListener('mousemove', movePen)
+    if ('ontouchstart' in window) {
+        penElement.className += ' is-shown'
+        penElement.addEventListener('touchstart', function() { penActive = true })
+        penElement.addEventListener('touchend', function() { penActive = false })
+        penElement.addEventListener('touchmove', movePen)
+        penElement.addEventListener('mousedown', function() { penActive = true })
+        penElement.addEventListener('mouseup', function() { penActive = false })
+        penElement.addEventListener('mousemove', movePen)
+    }
 })

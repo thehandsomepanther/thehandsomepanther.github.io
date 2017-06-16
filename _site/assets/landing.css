@@ -2,7 +2,6 @@ body {
   width: 100%;
   background-color: #fbfbfb;
   overflow-x: hidden;
-  display: none;
   cursor: url(../assets/images/pen.png), auto; }
 
 .text {
