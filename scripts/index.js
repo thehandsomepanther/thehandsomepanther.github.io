@@ -181,9 +181,8 @@ function drawScreen() {
 
     var font = '12px Space Mono'
     var filler = '&nbsp;'
-    var rect = document.querySelector('body').getBoundingClientRect()
-    console.log(rect);
-    var width = Math.floor(rect.width / 7)
+    var bodyRect = document.querySelector('body').getBoundingClientRect()
+    var width = Math.floor(bodyRect.width / 7)
 
     for (var textElement of document.querySelectorAll('.text')) {
         var length = 0
@@ -257,16 +256,16 @@ function drawScreen() {
 function triggerEvent(el, type, obj){
    if ('createEvent' in document) {
         // modern browsers, IE9+
-        var e = new Event(type);
+        var e = new Event(type)
         for (var key in obj) {
             e[key] = obj[key]
         }
         el.dispatchEvent(e);
     } else {
         // IE 8
-        var e = document.createEventObject();
-        e.eventType = type;
-        el.fireEvent('on'+e.eventType, e);
+        var e = document.createEventObject()
+        e.eventType = type
+        el.fireEvent('on'+e.eventType, e)
     }
 }
 
@@ -285,7 +284,7 @@ function movePen(e) {
 
         penElement.style.left = "" + x + "px";
         penElement.style.top = "" + y + "px";
-        rect = penElement.getBoundingClientRect()
+        var rect = penElement.getBoundingClientRect()
         var span = allElementsFromPoint(rect.left, rect.top).filter(function(el) {
             return el.tagName === 'SPAN'
         })[0]
