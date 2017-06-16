@@ -181,8 +181,11 @@ function drawScreen() {
 
     var font = '12px Space Mono'
     var filler = '&nbsp;'
-    var bodyRect = document.querySelector('body').getBoundingClientRect()
-    var width = Math.floor(bodyRect.width / 7)
+    var canvasElement = document.querySelector('.canvas')
+    var canvasWidth = canvasElement.getBoundingClientRect().width -
+        (parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-left')) +
+        parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-right')))
+    var width = Math.floor(canvasWidth / 7)
 
     for (var textElement of document.querySelectorAll('.text')) {
         var length = 0

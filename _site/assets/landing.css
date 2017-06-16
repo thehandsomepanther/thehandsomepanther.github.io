@@ -2,7 +2,8 @@ body {
   width: 100%;
   background-color: #fbfbfb;
   overflow-x: hidden;
-  cursor: url(../assets/images/pen.png), auto; }
+  cursor: url(../assets/images/pen.png), auto;
+  margin: 0; }
 
 .text {
   display: none; }
@@ -14,8 +15,7 @@ span, label {
   display: inline-block;
   font-size: 12px;
   font-family: 'Space Mono', monospace;
-  margin-top: 0;
-  margin-bottom: 0; }
+  margin: 0; }
 
 span {
   width: 7px;
@@ -55,6 +55,10 @@ a:visited {
 
 .mode label {
   z-index: -1; }
+
+.canvas {
+  width: 100%;
+  padding: 8px; }
 
 .pen {
   display: none; }
