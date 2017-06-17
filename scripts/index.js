@@ -183,7 +183,7 @@ function drawScreen() {
         for (var i = 0; i < words.length; i++) {
             var word = words[i]
 
-            if (length + word.length > width) {
+            if (length + word.length + 1 > width) {
                 for (var j = 0; j < width - length; j++) {
                     var span = document.createElement('span')
                     span.innerHTML = filler
@@ -224,8 +224,9 @@ function drawScreen() {
     }
 
     var spans = document.querySelectorAll('.canvas span')
+    var eventType = isMobile ? 'penover' : 'mouseover'
     for (var span of spans) {
-        span.addEventListener('mouseover', draw)
+        span.addEventListener(eventType, draw)
     }
 
     var links = document.querySelectorAll('a[class^="link-"]')
@@ -272,7 +273,7 @@ function movePen(e) {
         })[0]
 
         if (span !== undefined) {
-            triggerEvent(span, 'mouseover', {
+            triggerEvent(span, 'penover', {
                 pageX: rect.left,
                 pageY: rect.top
             })
@@ -283,6 +284,7 @@ function movePen(e) {
 var penActive = false
 var penElement = document.querySelector('.pen')
 var oldWidth
+var isMobile = 'ontouchstart' in window
 document.addEventListener('DOMContentLoaded', function() {
     drawScreen()
 
@@ -295,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
         oldWidth = window.innerWidth
     })
 
-    if ('ontouchstart' in window) {
+    if (isMobile) {
         penElement.className += ' is-shown'
         penElement.addEventListener('touchstart', function() { penActive = true })
         penElement.addEventListener('touchend', function() { penActive = false })
