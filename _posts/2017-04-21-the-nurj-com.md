@@ -2,7 +2,6 @@
 layout: post
 title:  "thenurj.com"
 description: "An online home for the Northwestern Undergraduate Research Journal."
-color: bg-blue
 date: 2017-04-22 19:15:04 -0600
 uid: thenurj
 link: http://www.thenurj.com
