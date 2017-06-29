@@ -142,7 +142,9 @@ function showImage(e) {
 }
 
 function hideImage(e) {
-    for (var imgElem of document.querySelectorAll('[class^="img-"]')) {
+    var imgElems = document.querySelectorAll('[class^="img-"]')
+    for (var i = 0; i < imageElements.length; i++) {
+        var imgElem = imgElems[i]
         imgElem.style.display = 'none'
 
         if (imgElem.tagName === 'VIDEO') {
@@ -153,7 +155,8 @@ function hideImage(e) {
 
 function drawScreen() {
     var spans = document.querySelectorAll('.canvas span')
-    for (var span of spans) {
+    for (var i = 0; i < spans.length; i++) {
+        var span = spans[i]
         removeEventListeners(span)
     }
     document.querySelector('.canvas').innerHTML = ''
@@ -166,7 +169,9 @@ function drawScreen() {
         parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-right')))
     var width = Math.floor(canvasWidth / 7)
 
-    for (var textElement of document.querySelectorAll('.text')) {
+    var textElements = document.querySelectorAll('.text')
+    for (var i = 0; i < textElements.length; i++) {
+        var textElement = textElements[i]
         var length = 0
         var frag = document.createDocumentFragment()
         var parent = frag
@@ -192,8 +197,9 @@ function drawScreen() {
 
                 length = 0
             }
-
-            for (var ch of word) {
+            
+            for (var j = 0; j < word.length; j++) {
+                var ch = word[i]
                 var span = document.createElement('span')
                 span.innerHTML = ch
                 parent.appendChild(span)
@@ -225,12 +231,14 @@ function drawScreen() {
 
     var spans = document.querySelectorAll('.canvas span')
     var eventType = isMobile ? 'penover' : 'mouseover'
-    for (var span of spans) {
+    for (var i = 0; i < spans.length; i++) {
+        var span = spans[i]
         span.addEventListener(eventType, draw)
     }
 
     var links = document.querySelectorAll('a[class^="link-"]')
-    for (var link of links) {
+    for (var i = 0; i < links.length; i++) {
+        var link = links[i]
         link.addEventListener('mouseover', showImage)
         link.addEventListener('mouseleave', hideImage)
     }
