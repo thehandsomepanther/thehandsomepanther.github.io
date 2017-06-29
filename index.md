@@ -36,9 +36,9 @@ permalink: /
     <span class="text">Software Engineer Intern, Box</span>
     <span class="text">Editor-in-Chief, Northwestern Undergraduate Research Journal</span>
     <span class="text">Student Fellow, Knight Lab</span>
-    <span class="text">Teaching Assistant, NUvention</span>
     <span class="text"></span>
     <span class="text">Was:</span>
+    <span class="text">Teaching Assistant, NUvention</span>
     <span class="text">Director, WildHacks</span>
     <span class="text">Software Engineer Intern, Groupon</span>
     <span class="text">Teaching Assistant, Human-Computer Interaction</span>
