@@ -1,5 +1,5 @@
 if (window.Element && !Element.prototype.closest) {
-    Element.prototype.closest = 
+    Element.prototype.closest =
     function(s) {
         var matches = (this.document || this.ownerDocument).querySelectorAll(s),
             i,
@@ -7,7 +7,7 @@ if (window.Element && !Element.prototype.closest) {
         do {
             i = matches.length;
             while (--i >= 0 && matches.item(i) !== el) {};
-        } while ((i < 0) && (el = el.parentElement)); 
+        } while ((i < 0) && (el = el.parentElement));
         return el;
     };
 }
@@ -199,11 +199,11 @@ function drawScreen() {
             parent.className = link.className
         }
 
-        for (var i = 0; i < words.length; i++) {
-            var word = words[i]
+        for (var j = 0; j < words.length; j++) {
+            var word = words[j]
 
             if (length + word.length + 1 > width) {
-                for (var j = 0; j < width - length; j++) {
+                for (var k = 0; k < width - length; k++) {
                     var span = document.createElement('span')
                     span.innerHTML = filler
                     parent.appendChild(span)
@@ -211,15 +211,15 @@ function drawScreen() {
 
                 length = 0
             }
-            
-            for (var j = 0; j < word.length; j++) {
-                var ch = word[i]
+
+            for (var k = 0; k < word.length; k++) {
+                var ch = word[k]
                 var span = document.createElement('span')
                 span.innerHTML = ch
                 parent.appendChild(span)
             }
 
-            if (i !== words.length - 1) {
+            if (j !== words.length - 1) {
                 var span = document.createElement('span')
                 span.innerHTML = filler
                 parent.appendChild(span)
@@ -233,7 +233,7 @@ function drawScreen() {
             frag.appendChild(parent)
         }
 
-        for (var i = 0; i < width - length; i++) {
+        for (var j = 0; j < width - length; j++) {
             var span = document.createElement('span')
             span.innerHTML = filler
             frag.appendChild(span)

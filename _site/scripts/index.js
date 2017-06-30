@@ -1,3 +1,17 @@
+if (window.Element && !Element.prototype.closest) {
+    Element.prototype.closest =
+    function(s) {
+        var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+            i,
+            el = this;
+        do {
+            i = matches.length;
+            while (--i >= 0 && matches.item(i) !== el) {};
+        } while ((i < 0) && (el = el.parentElement));
+        return el;
+    };
+}
+
 function removeEventListeners(e) {
     var clone = e.cloneNode()
     while (e.firstChild) {
@@ -142,7 +156,9 @@ function showImage(e) {
 }
 
 function hideImage(e) {
-    for (var imgElem of document.querySelectorAll('[class^="img-"]')) {
+    var imgElems = document.querySelectorAll('[class^="img-"]')
+    for (var i = 0; i < imageElements.length; i++) {
+        var imgElem = imgElems[i]
         imgElem.style.display = 'none'
 
         if (imgElem.tagName === 'VIDEO') {
@@ -153,7 +169,8 @@ function hideImage(e) {
 
 function drawScreen() {
     var spans = document.querySelectorAll('.canvas span')
-    for (var span of spans) {
+    for (var i = 0; i < spans.length; i++) {
+        var span = spans[i]
         removeEventListeners(span)
     }
     document.querySelector('.canvas').innerHTML = ''
@@ -166,7 +183,9 @@ function drawScreen() {
         parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-right')))
     var width = Math.floor(canvasWidth / 7)
 
-    for (var textElement of document.querySelectorAll('.text')) {
+    var textElements = document.querySelectorAll('.text')
+    for (var i = 0; i < textElements.length; i++) {
+        var textElement = textElements[i]
         var length = 0
         var frag = document.createDocumentFragment()
         var parent = frag
@@ -180,11 +199,11 @@ function drawScreen() {
             parent.className = link.className
         }
 
-        for (var i = 0; i < words.length; i++) {
-            var word = words[i]
+        for (var j = 0; j < words.length; j++) {
+            var word = words[j]
 
             if (length + word.length + 1 > width) {
-                for (var j = 0; j < width - length; j++) {
+                for (var k = 0; k < width - length; k++) {
                     var span = document.createElement('span')
                     span.innerHTML = filler
                     parent.appendChild(span)
@@ -193,13 +212,14 @@ function drawScreen() {
                 length = 0
             }
 
-            for (var ch of word) {
+            for (var k = 0; k < word.length; k++) {
+                var ch = word[k]
                 var span = document.createElement('span')
                 span.innerHTML = ch
                 parent.appendChild(span)
             }
 
-            if (i !== words.length - 1) {
+            if (j !== words.length - 1) {
                 var span = document.createElement('span')
                 span.innerHTML = filler
                 parent.appendChild(span)
@@ -213,7 +233,7 @@ function drawScreen() {
             frag.appendChild(parent)
         }
 
-        for (var i = 0; i < width - length; i++) {
+        for (var j = 0; j < width - length; j++) {
             var span = document.createElement('span')
             span.innerHTML = filler
             frag.appendChild(span)
@@ -225,12 +245,14 @@ function drawScreen() {
 
     var spans = document.querySelectorAll('.canvas span')
     var eventType = isMobile ? 'penover' : 'mouseover'
-    for (var span of spans) {
+    for (var i = 0; i < spans.length; i++) {
+        var span = spans[i]
         span.addEventListener(eventType, draw)
     }
 
     var links = document.querySelectorAll('a[class^="link-"]')
-    for (var link of links) {
+    for (var i = 0; i < links.length; i++) {
+        var link = links[i]
         link.addEventListener('mouseover', showImage)
         link.addEventListener('mouseleave', hideImage)
     }
