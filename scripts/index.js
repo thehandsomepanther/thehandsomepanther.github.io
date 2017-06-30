@@ -157,7 +157,7 @@ function showImage(e) {
 
 function hideImage(e) {
     var imgElems = document.querySelectorAll('[class^="img-"]')
-    for (var i = 0; i < imageElems.length; i++) {
+    for (var i = 0; i < imgElems.length; i++) {
         var imgElem = imgElems[i]
         imgElem.style.display = 'none'
 
