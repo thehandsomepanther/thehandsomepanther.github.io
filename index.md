@@ -24,6 +24,7 @@ permalink: /
     <span class="text"></span>
     <span class="text">Josh Shi</span>
     <span class="text">Studying Computer Science at Northwestern University</span>
+    <a href="/assets/images/resume-web.pdf" target="_blank"><span class="text">Résumé</span></a>
     <span class="text"></span>
     <span class="text">Links</span>
 

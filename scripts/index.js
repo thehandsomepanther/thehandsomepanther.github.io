@@ -197,6 +197,7 @@ function drawScreen() {
             parent = document.createElement('a')
             parent.href = link.href
             parent.className = link.className
+            parent.target = link.target
         }
 
         for (var j = 0; j < words.length; j++) {
