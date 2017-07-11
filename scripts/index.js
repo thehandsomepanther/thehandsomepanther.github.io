@@ -78,13 +78,13 @@ var drawModes = {
     },
     twinkle: {
         up: '✨',
-        down: '✨',
-        left: '✨',
-        right: '✨',
+        down: '💫',
+        left: '⭐️',
+        right: '🌟',
         upleft: '✨',
-        upright: '✨',
-        downleft: '✨',
-        downright: '✨'
+        upright: '💫',
+        downleft: '🌟',
+        downright: '⭐️'
     },
     redacted: {
         up: '▇',
@@ -95,6 +95,16 @@ var drawModes = {
         upright: '▇',
         downleft: '▇',
         downright: '▇'
+    },
+    sheriff: {
+        up: '🤠',
+        down: '👇',
+        left: '👢',
+        right: '👢',
+        upleft: '💯',
+        upright: '💯',
+        downleft: '💯',
+        downright: '💯'
     }
 }
 var mode = drawModes.lines
