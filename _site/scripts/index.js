@@ -192,6 +192,9 @@ function drawScreen() {
         (parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-left')) +
         parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-right')))
     var width = Math.floor(canvasWidth / 7)
+    console.log(canvasElement.style.width);
+    canvasElement.style.width = width * 7 + 'px';
+    console.log(canvasElement.style.width);
 
     var textElements = document.querySelectorAll('.text')
     for (var i = 0; i < textElements.length; i++) {
