@@ -69,5 +69,5 @@ permalink: /
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/debounce.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 <script src="scripts/index.js"></script>

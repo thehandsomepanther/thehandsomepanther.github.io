@@ -188,17 +188,19 @@ function drawScreen() {
     var font = '12px Space Mono'
     var filler = '&nbsp;'
     var canvasElement = document.querySelector('.canvas')
-    var canvasWidth = canvasElement.getBoundingClientRect().width -
+    var canvasRect = canvasElement.getBoundingClientRect()
+    var canvasWidth = canvasRect.width -
         (parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-left')) +
         parseInt(window.getComputedStyle(canvasElement, null).getPropertyValue('padding-right')))
     var width = Math.floor(canvasWidth / 7)
     canvasElement.style.width = width * 7 + 'px'
-
+    var maxCells = width * Math.floor(window.innerHeight / 12)
+    var cells = 0
+    var frag = document.createDocumentFragment()
     var textElements = document.querySelectorAll('.text')
     for (var i = 0; i < textElements.length; i++) {
         var textElement = textElements[i]
         var length = 0
-        var frag = document.createDocumentFragment()
         var parent = frag
         var text = textElement.innerHTML
         var words = text.split(" ")
@@ -219,6 +221,7 @@ function drawScreen() {
                     var span = document.createElement('span')
                     span.innerHTML = filler
                     parent.appendChild(span)
+                    ++cells
                 }
 
                 length = 0
@@ -229,12 +232,14 @@ function drawScreen() {
                 var span = document.createElement('span')
                 span.innerHTML = ch
                 parent.appendChild(span)
+                cells++
             }
 
             if (j !== words.length - 1) {
                 var span = document.createElement('span')
                 span.innerHTML = filler
                 parent.appendChild(span)
+                cells++
                 length += word.length + 1
             } else {
                 length += word.length
@@ -249,11 +254,20 @@ function drawScreen() {
             var span = document.createElement('span')
             span.innerHTML = filler
             frag.appendChild(span)
+            cells++
         }
-
-        document.querySelector('.canvas').appendChild(frag)
-        document.querySelector('body').style.display = 'block'
     }
+
+    // computers HATE this!!
+    // if (cells < maxCells) {
+    //     var span = document.createElement('span')
+    //     for (var i = 0; i < maxCells - cells; i++) {
+    //         frag.appendChild(span)
+    //     }
+    // }
+
+    document.querySelector('.canvas').appendChild(frag)
+    document.querySelector('body').style.display = 'block'
 
     var spans = document.querySelectorAll('.canvas span')
     var eventType = isMobile ? 'penover' : 'mouseover'
@@ -324,12 +338,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('input[name="reset"]').addEventListener('mousedown', drawScreen)
     document.querySelector('select').addEventListener('change', changeMode)
-    window.addEventListener("resize", function() {
+    window.addEventListener("resize", _.debounce(function() {
         if (window.innerWidth !== oldWidth) {
             drawScreen()
         }
         oldWidth = window.innerWidth
-    })
+    }, 200))
 
     if (isMobile) {
         penElement.className += ' is-shown'
