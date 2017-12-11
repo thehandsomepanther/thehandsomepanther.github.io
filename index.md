@@ -28,7 +28,6 @@ permalink: /
     <a href="/assets/images/shi-josh-web.png" target="_blank"><span class="text">Résumé</span></a>
     <span class="text"></span>
     <span class="text">Links</span>
-
     <a href="https://twitter.com/unfollowjoshshi" target="_blank"><span class="text">Twitter →</span></a>
     <a href="https://github.com/thehandsomepanther" target="_blank"><span class="text">Github →</span></a>
     <a href="https://www.are.na/josh-shi" target="_blank"><span class="text">Are.na →</span></a>
@@ -45,7 +44,7 @@ permalink: /
     <span class="text">Director, WildHacks</span>
     <span class="text">Software Engineer Intern, Groupon</span>
     <span class="text"></span>
-    <span class="text">Projects</span>
+    <span class="text">Work</span>
     {% for post in site.posts %}
         {% unless post.categories contains 'unpublished' %}
             {% if post.video %}
@@ -53,21 +52,17 @@ permalink: /
             {% elsif post.image %}
                 <img class="img-{{ post.uid }}" src="{{ post.image }}">
             {% endif %}
-
             {% if post.external %}
                 <a class="link-{{ post.uid }}" href="{{ post.external }}"><span class="text">{{ post.title }} →</span></a>
             {% else %}
                 <a class="link-{{ post.uid }}" href="{{ post.url }}"><span class="text">{{ post.title }} →</span></a>
             {% endif %}
             <span class="text">{{ post.description }}</span>
-
             <span class="text"></span>
         {% endunless %}
     {% endfor %}
 </div>
-<div class="canvas">
-
-</div>
+<div class="canvas"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 <script src="scripts/index.js"></script>

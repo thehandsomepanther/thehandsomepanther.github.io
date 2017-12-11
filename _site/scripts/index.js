@@ -41,8 +41,8 @@ function allElementsFromPoint(x, y) {
 
 var THRESHOLD = 5;
 var prev = {
-    x: undefined,
-    y: undefined
+    x: null,
+    y: null
 }
 
 var drawModes = {
@@ -177,6 +177,7 @@ function hideImage(e) {
     }
 }
 
+var charsPerLine = 66;
 function drawScreen() {
     var spans = document.querySelectorAll('.canvas span')
     for (var i = 0; i < spans.length; i++) {
@@ -198,6 +199,7 @@ function drawScreen() {
     var cells = 0
     var frag = document.createDocumentFragment()
     var textElements = document.querySelectorAll('.text')
+    charsPerLine = Math.min(charsPerLine, width)
     for (var i = 0; i < textElements.length; i++) {
         var textElement = textElements[i]
         var length = 0
@@ -216,7 +218,7 @@ function drawScreen() {
         for (var j = 0; j < words.length; j++) {
             var word = words[j]
 
-            if (length + word.length + 1 > width) {
+            if (length + word.length + 1 > charsPerLine) {
                 for (var k = 0; k < width - length; k++) {
                     var span = document.createElement('span')
                     span.innerHTML = filler

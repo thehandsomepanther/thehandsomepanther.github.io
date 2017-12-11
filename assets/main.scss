@@ -90,7 +90,8 @@ img {
 .serif {
   font-family: Athelas, "Palatino", "Times", "Georgia", serif;
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 1.5;
+  color: #111;
 }
 
 .mono {
@@ -211,6 +212,11 @@ img {
   }
 }
 
+.post-container p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .post-container ul {
   list-style-type: circle;
   padding-left: inherit;
@@ -225,6 +231,7 @@ img {
   font-size: 1rem;
   font-weight: normal;
   font-family: "Space Mono", monospace;
+  margin-bottom: 10px;
 }
 
 .header-sticky {
@@ -233,4 +240,8 @@ img {
     width: 20%;
     padding-right: 2rem;
   }
+}
+
+.header-sticky p {
+  margin-top: 0;
 }
