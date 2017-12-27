@@ -52,6 +52,12 @@ img {
   display: block;
   margin: 0 auto; }
 
+.sans {
+  font-family: 'Work Sans';
+  line-height: 1.5;
+  font-size: 18px;
+  color: #111; }
+
 .serif {
   font-family: Athelas, "Palatino", "Times", "Georgia", serif;
   font-size: 1.25rem;
@@ -152,9 +158,15 @@ img {
       max-width: 60%;
       padding-left: 2rem; } }
 
-.post-container p {
-  margin-top: 0;
+.post-container .post-title {
   margin-bottom: 20px; }
+
+.post-container p {
+  margin: 0; }
+
+.post-container p + p,
+.post-container ol + p {
+  text-indent: 3rem; }
 
 .post-container ul {
   list-style-type: circle;
@@ -166,10 +178,13 @@ img {
 .post-container h3,
 .post-container h4,
 .post-container h5 {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: "Space Mono", monospace;
-  margin-bottom: 10px; }
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0; }
+
+.post-container img,
+.post-container div {
+  margin: 20px 0; }
 
 @media screen and (min-width: 720px) {
   .header-sticky {

@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-10T19:32:51-05:00</updated><id>http://localhost:4000/</id><title type="html">josh shi</title><subtitle>josh shi cool man funny website haha</subtitle><entry><title type="html">NURJ Vol. 12</title><link href="http://localhost:4000/2017/06/18/nurj-vol-12.html" rel="alternate" type="text/html" title="NURJ Vol. 12" /><published>2017-06-18T21:15:04-04:00</published><updated>2017-06-18T21:15:04-04:00</updated><id>http://localhost:4000/2017/06/18/nurj-vol-12</id><content type="html" xml:base="http://localhost:4000/2017/06/18/nurj-vol-12.html">&lt;p&gt;You can see the contents of the 2016-17 edition of the NURJ &lt;a href=&quot;http://www.thenurj.com/issues/vol-12&quot;&gt;here&lt;/a&gt;.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-26T22:35:57-05:00</updated><id>http://localhost:4000/</id><title type="html">josh shi</title><subtitle>josh shi cool man funny website haha</subtitle><entry><title type="html">NURJ Vol. 12</title><link href="http://localhost:4000/2017/06/18/nurj-vol-12.html" rel="alternate" type="text/html" title="NURJ Vol. 12" /><published>2017-06-18T21:15:04-04:00</published><updated>2017-06-18T21:15:04-04:00</updated><id>http://localhost:4000/2017/06/18/nurj-vol-12</id><content type="html" xml:base="http://localhost:4000/2017/06/18/nurj-vol-12.html">&lt;p&gt;You can see the contents of the 2016-17 edition of the NURJ &lt;a href=&quot;http://www.thenurj.com/issues/vol-12&quot;&gt;here&lt;/a&gt;.
 &lt;img src=&quot;/assets/images/nurj12/nurj_cover.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">You can see the contents of the 2016-17 edition of the NURJ here.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/nurj12/nurj_cover.jpg" /></entry><entry><title type="html">thenurj.com</title><link href="http://localhost:4000/2017/04/22/the-nurj-com.html" rel="alternate" type="text/html" title="thenurj.com" /><published>2017-04-22T21:15:04-04:00</published><updated>2017-04-22T21:15:04-04:00</updated><id>http://localhost:4000/2017/04/22/the-nurj-com</id><content type="html" xml:base="http://localhost:4000/2017/04/22/the-nurj-com.html">&lt;p&gt;Recently, I’ve been working on creating the website for the Northwestern Undergraduate Research Journal (NURJ). The project spanned a few months and has taught me a lot, especially about making technical decisions with non-technical people in mind. The website is live at &lt;a href=&quot;http://www.thenurj.com&quot;&gt;thenurj.com&lt;/a&gt; and you can find the code behind it on &lt;a href=&quot;https://github.com/nurj/nurj&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-problem&quot;&gt;the problem&lt;/h2&gt;
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;The previous iteration of our website was built on Squarespace a few years before I joined the staff. This made it really easy for them to get a site off the ground, but it made it extremely difficult to add new content and train new members to use the system, since many different pages had to be updated whenever new content was uploaded.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/thenurj.com/nurj-squarespace.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On another point, we had recently updated the look of our print journal and the website no longer reflected our identity. We took this as an opportunity for a &lt;em&gt;tabula rasa&lt;/em&gt; and build a new site from the ground up tailored exactly to our needs.&lt;/p&gt;
 
-&lt;h2 id=&quot;our-approach&quot;&gt;our approach&lt;/h2&gt;
-
+&lt;h2 id=&quot;our-approach&quot;&gt;Our Approach&lt;/h2&gt;
 &lt;p&gt;I enlisted the help of our Art Director &lt;a href=&quot;http://www.florencefu.com&quot;&gt;Florence Fu&lt;/a&gt;, and we started thinking about the purpose behind the NURJ’s web presence.&lt;/p&gt;
 
 &lt;p&gt;To provide some background, the NURJ is a student publication which features undergraduate research at Northwestern University. Our flagship, the print journal, comes out once a year, at the end of Spring quarter, and comprises the senior theses from the previous academic year which were selected to be the best in their departments, as well as a few features on faculty at Northwestern who do interesting research. The website carries not only the content which goes in our print journal but also theses which undergraduates submit to us throughout the year and other features we write on university faculty.&lt;/p&gt;
@@ -36,8 +35,7 @@
 
 &lt;p&gt;Of course, we also wanted our website to be performant. If users were going to put in the time to read through a condensed thesis equivalent in length to 10 pages of material, we didn’t want them to have to wait for images or fonts to load (this is an issue especially because some theses use a lot of figures).&lt;/p&gt;
 
-&lt;h2 id=&quot;the-result&quot;&gt;the result&lt;/h2&gt;
-
+&lt;h2 id=&quot;the-result&quot;&gt;The Result&lt;/h2&gt;
 &lt;p&gt;There were a lot of options we explored for our CMS, from something as stripped back as using a Github Pages-hosted Jekyll blog to using WordPress as the CMS/editor and serving content by fetching it from the &lt;a href=&quot;https://developer.wordpress.org/rest-api/&quot;&gt;WordPress API&lt;/a&gt;. Eventually, we settled on &lt;a href=&quot;https://prismic.io&quot;&gt;Prismic&lt;/a&gt;. Prismic provides an incredibly expressive format for defining custom content types, which made working with our content super easy. It’s also headless, so it allows us to use whatever back- and front-end that would be most convenient for us.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Aside: one thing I would’ve liked to explore but didn’t find out about until recently is using &lt;a href=&quot;https://www.drivecms.xyz&quot;&gt;Google Drive as a CMS&lt;/a&gt;, with documents written in a human-friendly markup format like &lt;a href=&quot;http://archieml.org&quot;&gt;ArchieML&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -52,7 +50,7 @@
 
 &lt;p&gt;There are still a few things that we’re still trying to figure out how to integrate into our workflow while maintaining ease of use (for example, compressing images before uploading them to the site). Even though we’re live, the website is definitely still a living, breathing project and we’re constantly making updates and pushing changes. If you just wanna check out the code, you can view it on &lt;a href=&quot;https://github.com/nurj/nurj&quot;&gt;Github&lt;/a&gt;, and if you’re interested in helping out feel free to shoot us an &lt;a href=&quot;http://www.thenurj.com/join&quot;&gt;message&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, I’ve been working on creating the website for the Northwestern Undergraduate Research Journal (NURJ). The project spanned a few months and has taught me a lot, especially about making technical decisions with non-technical people in mind. The website is live at thenurj.com and you can find the code behind it on Github.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/thenurj.com/nurj.jpg" /></entry><entry><title type="html">slag</title><link href="http://localhost:4000/2017/02/08/slag.html" rel="alternate" type="text/html" title="slag" /><published>2017-02-08T20:15:04-05:00</published><updated>2017-02-08T20:15:04-05:00</updated><id>http://localhost:4000/2017/02/08/slag</id><content type="html" xml:base="http://localhost:4000/2017/02/08/slag.html">&lt;p&gt;&lt;em&gt;This was a project I worked on with my good buddy &lt;a href=&quot;http://www.brandonfujii.com&quot;&gt;Brandon Fujii&lt;/a&gt;. You can find the code for slag on Github &lt;a href=&quot;https://github.com/thehandsomepanther/slag&quot;&gt;here&lt;/a&gt; or see the npm module &lt;a href=&quot;https://www.npmjs.com/package/slag-cli&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;the-problem&quot;&gt;the problem&lt;/h2&gt;
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
 &lt;p&gt;Up until last year, I was doing all my work on a late 2008 13” Macbook with eight gigs of ram. It wasn’t impossible to get things done, but there were some tasks which took a long time or would start my fan spinning (like launching Illustrator or watching videos on YouTube).&lt;/p&gt;
 
@@ -64,7 +62,7 @@
 
 &lt;p&gt;This is a screenshot taken on my current work machine, a late 2014 15” Macbook Pro with 16 gigs of ram. At the time this screenshot was taken, I had Slack open for about three minutes. It’s already using up more than a gigabyte of my memory.&lt;/p&gt;
 
-&lt;h2 id=&quot;our-approach&quot;&gt;our approach&lt;/h2&gt;
+&lt;h2 id=&quot;our-approach&quot;&gt;Our Approach&lt;/h2&gt;
 
 &lt;p&gt;From the beginning, the goal of slag was never to replace the Slack app completely–after all, the apps are great. What we wanted was a stripped down version of Slack that was much lighter. Something a user would be able to use on a day-to-day basis for the majority of Slack communications. A client that provided 80% of Slack’s functionality using 20% of the memory.&lt;/p&gt;
 
@@ -72,7 +70,7 @@
 
 &lt;p&gt;Thankfully, Slack provides a very helpful &lt;a href=&quot;https://api.slack.com/web&quot;&gt;web API&lt;/a&gt; that had almost everything we needed to build out the messaging part. For the ncurses-like terminal GUI, we used a Javascript library called &lt;a href=&quot;https://github.com/chjj/blessed&quot;&gt;blessed&lt;/a&gt;, along with some components from &lt;a href=&quot;https://github.com/yaronn/blessed-contrib&quot;&gt;blessed-contrib&lt;/a&gt; and a few custom components as well.&lt;/p&gt;
 
-&lt;h2 id=&quot;a-few-challenges&quot;&gt;a few challenges&lt;/h2&gt;
+&lt;h2 id=&quot;a-few-challenges&quot;&gt;A Few Challenges&lt;/h2&gt;
 
 &lt;p&gt;/-commands like giphy aren’t exposed in Slack’s public web API, but by looking at network calls in a browser we were able to figure them out. @-mentions required some regex expressions to decipher and assemble. Supporting Slack’s colon-flanked &lt;code class=&quot;highlighter-rouge&quot;&gt;:emoji-code:&lt;/code&gt; was a little more of an exercise since Javascript pre-ES6 doesn’t support unicode, but we were able to get it working using surrogate pairs.&lt;/p&gt;
 
@@ -80,7 +78,7 @@
 
 &lt;p&gt;We also realized that adding tokens (i.e. providing credentials) for a team was still a pain. We added some useful commands (namely, &lt;code class=&quot;highlighter-rouge&quot;&gt;slag --set-token &amp;lt;token&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;slag --set-tokens &amp;lt;json-file&amp;gt;&lt;/code&gt;) to make that process easier as well as a helpful manual for new users.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-result&quot;&gt;the result&lt;/h2&gt;
+&lt;h2 id=&quot;the-result&quot;&gt;The Result&lt;/h2&gt;
 
 &lt;p&gt;When all was said and done, we ended up with a Slack terminal client that supported&lt;/p&gt;
 &lt;ul&gt;
@@ -104,13 +102,13 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/slag/memory.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;next-steps--retrospective&quot;&gt;next steps &amp;amp; retrospective&lt;/h2&gt;
+&lt;h2 id=&quot;next-steps--retrospective&quot;&gt;Next Steps &amp;amp; Retrospective&lt;/h2&gt;
 
 &lt;p&gt;We’re currently working on transpiling slag over from ES6 so it can be used with older versions of Node. If I had the chance to start this project over again, I probably would’ve paid a little more attention to making sure that transpiling would be easier down the road. While we did get to use some nifty ES6 features to handle the asynchronous API calls, it would’ve also been nice to think about accessibility from the get-go.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Slack has since made some &lt;a href=&quot;https://slack.engineering/reducing-slacks-memory-footprint-4480fec7e8eb#.79f8z8m33&quot;&gt;improvements&lt;/a&gt; to the client by moving certain teams over to a “minimal client” which a much smaller memory footprint. The full client, however, appears to use the same amount of memory.&lt;/p&gt;</content><author><name></name></author><summary type="html">This was a project I worked on with my good buddy Brandon Fujii. You can find the code for slag on Github here or see the npm module here.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/slag/slag.png" /></entry><entry><title type="html">Collaborative Code Competitions</title><link href="http://localhost:4000/2017/02/07/ccc.html" rel="alternate" type="text/html" title="Collaborative Code Competitions" /><published>2017-02-07T20:15:04-05:00</published><updated>2017-02-07T20:15:04-05:00</updated><id>http://localhost:4000/2017/02/07/ccc</id><content type="html" xml:base="http://localhost:4000/2017/02/07/ccc.html">&lt;p&gt;This is my current research project for a class called Design, Technology, and Research. I’m advised by Nell O’Rourke and Haoqi Zhang; my research is funded by an Undergraduate Research Grant from the university.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-problem&quot;&gt;the problem&lt;/h2&gt;
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
 &lt;p&gt;Prior research has demonstrated that &lt;a href=&quot;http://journals.sagepub.com/doi/abs/10.3102/00346543069001021&quot;&gt;students learn undergraduate science, technology, engineering, and math concepts better&lt;/a&gt; &lt;a href=&quot;http://scholar.lib.vt.edu/ejournals/JTE/v7n1/gokhale.jte-v7n1.html?ref=Sawos.Org&quot;&gt;when they learn in a collaborative setting&lt;/a&gt;. Despite this, many resources for learning computer science and programming concepts (e.g. Hackerrank, Codecademy, etc.) available online put students in an isolated environment.&lt;/p&gt;
 

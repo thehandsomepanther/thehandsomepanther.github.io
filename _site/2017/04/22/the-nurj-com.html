@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/2017/04/22/the-nurj-com.html">
   <link rel="alternate" type="application/rss+xml" title="josh shi" href="/feed.xml">
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Space+Mono'>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
   
@@ -27,21 +27,21 @@
     <div class="header-sticky">
       <p><a href="/">Josh Shi</a></p>
     </div>
-  </div><div class="post-container serif" itemprop="articleBody">
+  </div>
+  <div class="post-container sans" itemprop="articleBody">
     <header class="post-header">
-      <p class="mono post-title" itemprop="name headline">thenurj.com</p>
+      <p class="sans post-title" itemprop="name headline">thenurj.com</p>
     </header>
     <p>Recently, I’ve been working on creating the website for the Northwestern Undergraduate Research Journal (NURJ). The project spanned a few months and has taught me a lot, especially about making technical decisions with non-technical people in mind. The website is live at <a href="http://www.thenurj.com">thenurj.com</a> and you can find the code behind it on <a href="https://github.com/nurj/nurj">Github</a>.</p>
 
-<h2 id="the-problem">the problem</h2>
+<h2 id="the-problem">The Problem</h2>
 <p>The previous iteration of our website was built on Squarespace a few years before I joined the staff. This made it really easy for them to get a site off the ground, but it made it extremely difficult to add new content and train new members to use the system, since many different pages had to be updated whenever new content was uploaded.</p>
 
 <p><img src="/assets/images/thenurj.com/nurj-squarespace.jpg" alt="" /></p>
 
 <p>On another point, we had recently updated the look of our print journal and the website no longer reflected our identity. We took this as an opportunity for a <em>tabula rasa</em> and build a new site from the ground up tailored exactly to our needs.</p>
 
-<h2 id="our-approach">our approach</h2>
-
+<h2 id="our-approach">Our Approach</h2>
 <p>I enlisted the help of our Art Director <a href="http://www.florencefu.com">Florence Fu</a>, and we started thinking about the purpose behind the NURJ’s web presence.</p>
 
 <p>To provide some background, the NURJ is a student publication which features undergraduate research at Northwestern University. Our flagship, the print journal, comes out once a year, at the end of Spring quarter, and comprises the senior theses from the previous academic year which were selected to be the best in their departments, as well as a few features on faculty at Northwestern who do interesting research. The website carries not only the content which goes in our print journal but also theses which undergraduates submit to us throughout the year and other features we write on university faculty.</p>
@@ -68,8 +68,7 @@
 
 <p>Of course, we also wanted our website to be performant. If users were going to put in the time to read through a condensed thesis equivalent in length to 10 pages of material, we didn’t want them to have to wait for images or fonts to load (this is an issue especially because some theses use a lot of figures).</p>
 
-<h2 id="the-result">the result</h2>
-
+<h2 id="the-result">The Result</h2>
 <p>There were a lot of options we explored for our CMS, from something as stripped back as using a Github Pages-hosted Jekyll blog to using WordPress as the CMS/editor and serving content by fetching it from the <a href="https://developer.wordpress.org/rest-api/">WordPress API</a>. Eventually, we settled on <a href="https://prismic.io">Prismic</a>. Prismic provides an incredibly expressive format for defining custom content types, which made working with our content super easy. It’s also headless, so it allows us to use whatever back- and front-end that would be most convenient for us.</p>
 
 <p><em>Aside: one thing I would’ve liked to explore but didn’t find out about until recently is using <a href="https://www.drivecms.xyz">Google Drive as a CMS</a>, with documents written in a human-friendly markup format like <a href="http://archieml.org">ArchieML</a>.</em></p>

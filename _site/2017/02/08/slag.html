@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/2017/02/08/slag.html">
   <link rel="alternate" type="application/rss+xml" title="josh shi" href="/feed.xml">
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Space+Mono'>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
   
@@ -27,13 +27,14 @@
     <div class="header-sticky">
       <p><a href="/">Josh Shi</a></p>
     </div>
-  </div><div class="post-container serif" itemprop="articleBody">
+  </div>
+  <div class="post-container sans" itemprop="articleBody">
     <header class="post-header">
-      <p class="mono post-title" itemprop="name headline">slag</p>
+      <p class="sans post-title" itemprop="name headline">slag</p>
     </header>
     <p><em>This was a project I worked on with my good buddy <a href="http://www.brandonfujii.com">Brandon Fujii</a>. You can find the code for slag on Github <a href="https://github.com/thehandsomepanther/slag">here</a> or see the npm module <a href="https://www.npmjs.com/package/slag-cli">here</a>.</em></p>
 
-<h2 id="the-problem">the problem</h2>
+<h2 id="the-problem">The Problem</h2>
 
 <p>Up until last year, I was doing all my work on a late 2008 13” Macbook with eight gigs of ram. It wasn’t impossible to get things done, but there were some tasks which took a long time or would start my fan spinning (like launching Illustrator or watching videos on YouTube).</p>
 
@@ -45,7 +46,7 @@
 
 <p>This is a screenshot taken on my current work machine, a late 2014 15” Macbook Pro with 16 gigs of ram. At the time this screenshot was taken, I had Slack open for about three minutes. It’s already using up more than a gigabyte of my memory.</p>
 
-<h2 id="our-approach">our approach</h2>
+<h2 id="our-approach">Our Approach</h2>
 
 <p>From the beginning, the goal of slag was never to replace the Slack app completely–after all, the apps are great. What we wanted was a stripped down version of Slack that was much lighter. Something a user would be able to use on a day-to-day basis for the majority of Slack communications. A client that provided 80% of Slack’s functionality using 20% of the memory.</p>
 
@@ -53,7 +54,7 @@
 
 <p>Thankfully, Slack provides a very helpful <a href="https://api.slack.com/web">web API</a> that had almost everything we needed to build out the messaging part. For the ncurses-like terminal GUI, we used a Javascript library called <a href="https://github.com/chjj/blessed">blessed</a>, along with some components from <a href="https://github.com/yaronn/blessed-contrib">blessed-contrib</a> and a few custom components as well.</p>
 
-<h2 id="a-few-challenges">a few challenges</h2>
+<h2 id="a-few-challenges">A Few Challenges</h2>
 
 <p>/-commands like giphy aren’t exposed in Slack’s public web API, but by looking at network calls in a browser we were able to figure them out. @-mentions required some regex expressions to decipher and assemble. Supporting Slack’s colon-flanked <code class="highlighter-rouge">:emoji-code:</code> was a little more of an exercise since Javascript pre-ES6 doesn’t support unicode, but we were able to get it working using surrogate pairs.</p>
 
@@ -61,7 +62,7 @@
 
 <p>We also realized that adding tokens (i.e. providing credentials) for a team was still a pain. We added some useful commands (namely, <code class="highlighter-rouge">slag --set-token &lt;token&gt;</code> and <code class="highlighter-rouge">slag --set-tokens &lt;json-file&gt;</code>) to make that process easier as well as a helpful manual for new users.</p>
 
-<h2 id="the-result">the result</h2>
+<h2 id="the-result">The Result</h2>
 
 <p>When all was said and done, we ended up with a Slack terminal client that supported</p>
 <ul>
@@ -85,7 +86,7 @@
 
 <p><img src="/assets/images/slag/memory.png" /></p>
 
-<h2 id="next-steps--retrospective">next steps &amp; retrospective</h2>
+<h2 id="next-steps--retrospective">Next Steps &amp; Retrospective</h2>
 
 <p>We’re currently working on transpiling slag over from ES6 so it can be used with older versions of Node. If I had the chance to start this project over again, I probably would’ve paid a little more attention to making sure that transpiling would be easier down the road. While we did get to use some nifty ES6 features to handle the asynchronous API calls, it would’ve also been nice to think about accessibility from the get-go.</p>
 

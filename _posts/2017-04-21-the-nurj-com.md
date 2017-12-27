@@ -10,15 +10,14 @@ video: "assets/images/thenurj.com/nurj.mp4"
 ---
 Recently, I've been working on creating the website for the Northwestern Undergraduate Research Journal (NURJ). The project spanned a few months and has taught me a lot, especially about making technical decisions with non-technical people in mind. The website is live at [thenurj.com](http://www.thenurj.com) and you can find the code behind it on [Github](https://github.com/nurj/nurj).
 
-## the problem
+## The Problem
 The previous iteration of our website was built on Squarespace a few years before I joined the staff. This made it really easy for them to get a site off the ground, but it made it extremely difficult to add new content and train new members to use the system, since many different pages had to be updated whenever new content was uploaded.
 
 ![](/assets/images/thenurj.com/nurj-squarespace.jpg)
 
 On another point, we had recently updated the look of our print journal and the website no longer reflected our identity. We took this as an opportunity for a *tabula rasa* and build a new site from the ground up tailored exactly to our needs.
 
-## our approach
-
+## Our Approach
 I enlisted the help of our Art Director [Florence Fu](http://www.florencefu.com), and we started thinking about the purpose behind the NURJ's web presence.
 
 To provide some background, the NURJ is a student publication which features undergraduate research at Northwestern University. Our flagship, the print journal, comes out once a year, at the end of Spring quarter, and comprises the senior theses from the previous academic year which were selected to be the best in their departments, as well as a few features on faculty at Northwestern who do interesting research. The website carries not only the content which goes in our print journal but also theses which undergraduates submit to us throughout the year and other features we write on university faculty.
@@ -41,8 +40,7 @@ We also had a few things to consider from the operations side. Since we couldn't
 
 Of course, we also wanted our website to be performant. If users were going to put in the time to read through a condensed thesis equivalent in length to 10 pages of material, we didn't want them to have to wait for images or fonts to load (this is an issue especially because some theses use a lot of figures).
 
-## the result
-
+## The Result
 There were a lot of options we explored for our CMS, from something as stripped back as using a Github Pages-hosted Jekyll blog to using WordPress as the CMS/editor and serving content by fetching it from the [WordPress API](https://developer.wordpress.org/rest-api/). Eventually, we settled on [Prismic](https://prismic.io). Prismic provides an incredibly expressive format for defining custom content types, which made working with our content super easy. It's also headless, so it allows us to use whatever back- and front-end that would be most convenient for us.
 
 *Aside: one thing I would've liked to explore but didn't find out about until recently is using [Google Drive as a CMS](https://www.drivecms.xyz), with documents written in a human-friendly markup format like [ArchieML](http://archieml.org).*
