@@ -23,6 +23,7 @@ github_username:  thehandsomepanther
 favicon: /assets/images/favicon.ico
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 theme: jekyll-theme-minimal
 gems:

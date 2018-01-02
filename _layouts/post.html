@@ -9,7 +9,11 @@ layout: default
   </div>
   <div class="post-container sans" itemprop="articleBody">
     <header class="post-header">
-      <p class="sans post-title" itemprop="name headline">{{ page.title | escape }}</p>
+      {% if page.description %}
+        <p class="sans post-title" itemprop="name headline">{{ page.title | escape }}: <span>{{ page.description | escape }}</span></p>
+      {% else %}
+        <p class="sans post-title" itemprop="name headline">{{ page.title | escape }}</p>
+      {% endif %}
     </header>
     {{ content }}
   </div>
