@@ -10,10 +10,11 @@ layout: default
   <div class="post-container sans" itemprop="articleBody">
     <header class="post-header">
       {% if page.description %}
-        <p class="sans post-title" itemprop="name headline">{{ page.title | escape }}: <span>{{ page.description | escape }}</span></p>
+        <p class="sans post-title" itemprop="name headline">{{ page.title }}: <span>{{ page.description }}</span></p>
       {% else %}
-        <p class="sans post-title" itemprop="name headline">{{ page.title | escape }}</p>
+        <p class="sans post-title" itemprop="name headline">{{ page.title }}</p>
       {% endif %}
+      <p class="sans post-date">{{ page.date | date: '%B %d, %Y' }}</p>
     </header>
     {{ content }}
   </div>

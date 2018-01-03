@@ -44,9 +44,9 @@ permalink: /
     <span class="text">Director, WildHacks</span>
     <span class="text">Software Engineer Intern, Groupon</span>
     <span class="text"></span>
-    <span class="text">Work</span>
+    <span class="text">Projects</span>
     {% for post in site.posts %}
-        {% unless post.categories contains 'unpublished' %}
+        {% unless post.categories contains 'unpublished' or post.series %}
             {% if post.video %}
                 <video class="img-{{ post.uid }}" src="{{ post.video }}" loop poster="{{ post.image }}"></video>
             {% elsif post.image %}

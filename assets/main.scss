@@ -11,6 +11,7 @@ $color-yellow: #FFD700;
 $color-black: #111111;
 $color-purple: #bccbff;
 $color-orange: #ffd27b;
+
 @mixin past($media) {
   @media screen and (min-width: $media) {
     @content;
@@ -200,7 +201,7 @@ img {
 }
 
 .post-container {
-  padding-bottom: 400px;
+  padding-bottom: 8rem;
 
   @include past($break-small) {
     width: 500px;
@@ -208,8 +209,17 @@ img {
   }
 }
 
-.post-container .post-title {
+.post-header {
   margin-bottom: 20px;
+}
+
+.post-title {
+  margin: 0;
+}
+
+.post-date {
+  margin-top: 0;
+  color: rgb(143, 145, 157);
 }
 
 .post-container ul {

@@ -145,14 +145,21 @@ img {
   display: block; }
 
 .post-container {
-  padding-bottom: 400px; }
+  padding-bottom: 8rem; }
   @media screen and (min-width: 720px) {
     .post-container {
       width: 500px;
       padding-left: 2rem; } }
 
-.post-container .post-title {
+.post-header {
   margin-bottom: 20px; }
+
+.post-title {
+  margin: 0; }
+
+.post-date {
+  margin-top: 0;
+  color: #8f919d; }
 
 .post-container ul {
   list-style-type: circle;
