@@ -9,7 +9,7 @@
   <title>Josh Shi: Pyrus</title>
   <meta name="description" content="Over the past few quarters, my partner and I have been working on a research project focused on learning more about how we might design a collaborative codin...">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://joshshi.com/unpublished/2018/01/01/pyrus.html">
+  <link rel="canonical" href="http://localhost:4000/2018/01/01/pyrus.html">
   <link rel="alternate" type="application/rss+xml" title="josh shi" href="/feed.xml">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -31,20 +31,20 @@
   <div class="post-container sans" itemprop="articleBody">
     <header class="post-header">
       
-        <p class="sans post-title" itemprop="name headline">Pyrus: <span>Using Redux on the Server to Manage State in a Multiplayer Game</span></p>
+        <p class="sans post-title" itemprop="name headline">Pyrus: <span>Using Redux on the server to manage state in a collaborative game to support problem-solving</span></p>
       
       <p class="sans post-date">January 01, 2018</p>
     </header>
-    <p>Over the past few quarters, my partner and I have been working on a research project focused on learning more about how we might design a collaborative coding game which helps novice computer science students develop their programming problem-solving skills. We recently submitted a paper to CHI 2018’s Student Research Competition, which focuses mostly on the design arguments for our system and our research contributions, but didn’t give us a chance to talk about some of the interesting technical challenges we faced and how we tackled those. In this post, I’ll be talking about how we used Redux on the back-end to synchronize game state across the server and multiple clients.</p>
+    <p>Over the past few quarters, my partner and I have been working on a research project focused on learning more about how we might design a collaborative coding game which helps novice computer science students develop their programming problem-solving skills. Our system is called <a href="https://en.wikipedia.org/wiki/Pear">Pyrus</a> and the project is advised by Nell O’Rourke as part of a class called Design, Technology and Research. We recently submitted a paper to CHI 2018’s Student Research Competition, which focuses mostly on the design arguments for our system and our research contributions, but didn’t give us a chance to talk about some of the interesting technical challenges we faced. In this post, I’ll be going over how we handled one interesting technical hurdle by using Redux on the back-end to synchronize game state between a server and multiple clients.</p>
 
 <h2 id="the-challenge">The Challenge</h2>
-<p>To provide some context, our system involved a game which had a few standard game-like components, like a board and a deck. Different actions taken by the players would mutate the state of the game across components, e.g. a player drawing a card would pop a card off the top of the deck and push it onto the player’s hand. All these changes needed to be propagated to all clients in real time and needed to be handled on the same way to ensure that state changes were consistent.</p>
+<p>To provide some context, our system consists of a game which has a few standard game-like components, like a board and a deck of cards. In this game, players can take actions that mutate the state of the game across multiple components, e.g. drawing a card would pop a card off the top of the deck and push it onto the player’s hand. All these changes need to be propagated to all clients in real time and must be handled the same way to ensure that state changes are consistent.</p>
 
 <p>We went back and forth on a few different methods for managing state, but we eventually realized that Redux was probably the best way to go for a couple of reasons:</p>
 
 <ol>
   <li>
-    <p>We were mainly concerned about keeping game state in sync between the server (the source of truth) and multiple clients. From a bit of digging online, we realized the <a href="https://gamedev.stackexchange.com/questions/28820/how-do-i-sync-multiplayer-game-state-more-efficiently-than-full-state-updates">typical</a> way to do this in multiplayer games is to keep game state stored in a well-defined object model and <em>transmit all changes to game state as events</em>. This is pretty much Redux’s bread and butter.</p>
+    <p>From a bit of digging online, we realized the <a href="https://gamedev.stackexchange.com/questions/28820/how-do-i-sync-multiplayer-game-state-more-efficiently-than-full-state-updates">typical</a> way to keep state in sync between a server (the source of truth) and multiple clients in multiplayer games is to keep game state stored in a well-defined object model and <em>transmit all changes to game state as discrete events</em>. This is pretty much Redux’s bread and butter.</p>
   </li>
   <li>
     <p>Using Redux on the back-end meant we could reuse much of our Redux code (e.g. actions, reducers, etc) on the front-end. Not only did it save us a lot of time from not having to write and maintain two sets of code that did the same thing, it also ensured that all actions were handled in exactly the same way between client and server.</p>
@@ -57,7 +57,7 @@
 <p>But there was one sticking point: Redux is usually paired with a view library like React, and we weren’t able to find much information online about Redux being used on the server. This meant we had our work cut out for us as far as figuring out the best way to organize our application.</p>
 
 <h2 id="the-solution">The Solution</h2>
-<p>Our solution was to create a Game class which configures a Redux store in its constructor. Once a Game object is instantiated, its store becomes a member variable (i.e. <code class="highlighter-rouge">this._store</code>) of that object. This is what we use in place of traditional member variables to mutate the state of the game. Now, any time we want to dispatch an action, we can simply call <code class="highlighter-rouge">this._store.dispatch(someActionCreator());</code>  from within the Game itself.</p>
+<p>Our solution was to create a Game class which configures a Redux store in its constructor. Once a Game object is instantiated, its store becomes a member variable of that object, i.e. accessible through <code class="highlighter-rouge">this._store</code>. This is what we use in place of traditional member variables to mutate the state of the game. Now any time we want to dispatch an action, we can simply call <code class="highlighter-rouge">this._store.dispatch(someActionCreator());</code> from within the Game itself.</p>
 
 <p>Being able to do this is nice because it affords us a few benefits:</p>
 
@@ -128,10 +128,11 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>As mentioned above, using the same representation of game state on the server and the client made managing updates between clients really easy. We basically set up a WebSocket connection between the server and all the clients whenever a new client joins a game. On that connection, the server sends over the JSON representation of the current game state. Once that connection is established, the client will send a message to the server whenever it performs an action (the <code class="highlighter-rouge">JSON.stringify()</code>’d Redux action). The server takes each message, parses it, does all the necessary checking, and handles that action. Attached to the store on the back-end is some custom middleware that intercepts every action and broadcasts it to all clients listening on that WebSocket connection. Those clients then receive those incoming WebSocket messages and dispatch each action on their own stores. This way, we guarantee that every state mutation the server applies is sent to the client as well.</p>
+<p>As mentioned above, using the same representation of game state on the server and the client made managing updates between clients really easy. We basically set up a WebSocket connection between the server and all the clients whenever a new client joins a game. On that connection, the server sends over the JSON representation of the current game state. Once that connection is established, the client will send a message to the server whenever the player performs an action (the <code class="highlighter-rouge">JSON.stringify()</code>’d Redux action). The server takes each message, parses it, does all the necessary checking, and handles that action. Attached to the store on the back-end is some custom middleware that intercepts every dispatched action and broadcasts it to all clients listening on that WebSocket connection. Those clients then receive those incoming WebSocket messages and dispatch each action on their own stores. This way, we guarantee that every state mutation the server applies is sent to the client as well.</p>
 
-<h2 id="prologue">Prologue</h2>
-<p>A friend of mine recently pointed me to <a href="https://github.com/google/boardgame.io">boardgame.io</a>, a framework which is conceptually very similar to what I outlined above and provides a good layer of abstraction over all that state-management stuff. Check it out if you’re interested in a solution similar to what I’ve discussed that’s ready out-of-the-box.</p>
+<p>This was an interesting problem to think through and it definitely took some time before we fell into a comfortable paradigm with it, but in the end I think it worked out really well. The ease of moving between the front- and back-end codebases, possible because that were both in Javascript they shared almost all their Redux code, was actually tremendously helpful.</p>
+
+<p>I was thinking about abstracting some of the work we’ve done into a generalizable framework for writing multiplayer games in a full Javascript stack, but then a friend of mine recently pointed me to <a href="https://github.com/google/boardgame.io">boardgame.io</a>. At time of writing it’s pretty new, but it provides a good layer of abstraction over all that state-management stuff and is conceptually very similar to what I outlined above. Check it out if you’re interested in a solution similar to what I’ve discussed that’s ready out-of-the-box.</p>
 
   </div>
 
