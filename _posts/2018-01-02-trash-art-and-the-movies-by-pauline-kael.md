@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "“Trash, Art, and the Movies” by Pauline Kael"
-date: 2018-01-01 21:49 -0500
+date: 2018-01-02 21:49 -0500
 series: 200-essays
 ---
 If you don’t know who Pauline Kael was, I recommend giving her [Wikipedia page](https://en.wikipedia.org/wiki/Pauline_Kael) a quick pass. She was and continues to be an incredibly divisive figure, and during her 23-year tenure at the *New Yorker*, she established herself as one of the influential voices of film criticism to date. Her opinions on movies often went contrary to those of her contemporaries and the general public (for instance, she panned *The Sound of Music*, *2001: A Space Odyssey*, and *West Side Story* while praising films like *The Warriors*), and she regularly butted heads with both her colleagues at the *New Yorker* as well as people in the movie industry. Roger Ebert [said of her](https://www.rogerebert.com/rogers-journal/knocked-up-at-the-movies), “Pauline had no theory, no rules, no guidelines, no objective standards. You couldn't apply her ‘approach’ to a film. With her it was all personal.” While I agree it’s clear that films were deeply personal to her, I would argue that she did have rules, theory, and guidelines behind her opinions. They just might not be what we expect.

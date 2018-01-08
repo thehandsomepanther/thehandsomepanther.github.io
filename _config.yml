@@ -19,7 +19,7 @@ description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://joshshi.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: unfollowjoshshi
-github_username:  thehandsomepanther
+github_username: thehandsomepanther
 favicon: /assets/images/favicon.ico
 
 # Build settings
