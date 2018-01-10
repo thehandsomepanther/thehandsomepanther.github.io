@@ -176,9 +176,13 @@ img {
   margin-bottom: 0;
   line-height: 1.4; }
 
-.post-container img,
 .post-container div {
   margin: 20px 0; }
+
+.post-container .caption {
+  color: #8f919d;
+  font-size: .8rem;
+  text-indent: 2rem; }
 
 @media screen and (min-width: 720px) {
   .header-sticky {

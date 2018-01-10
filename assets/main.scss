@@ -11,6 +11,7 @@ $color-yellow: #FFD700;
 $color-black: #111111;
 $color-purple: #bccbff;
 $color-orange: #ffd27b;
+$color-grey: #8f919d;
 
 @mixin past($media) {
   @media screen and (min-width: $media) {
@@ -219,7 +220,7 @@ img {
 
 .post-date {
   margin-top: 0;
-  color: rgb(143, 145, 157);
+  color: $color-grey;
 }
 
 .post-container ul {
@@ -239,9 +240,14 @@ img {
   line-height: 1.4;
 }
 
-.post-container img,
 .post-container div {
   margin: 20px 0;
+}
+
+.post-container .caption {
+  color: $color-grey;
+  font-size: .8rem;
+  text-indent: 2rem;
 }
 
 .header-sticky {
