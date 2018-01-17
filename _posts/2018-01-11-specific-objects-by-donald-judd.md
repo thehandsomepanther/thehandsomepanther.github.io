@@ -3,6 +3,7 @@ layout: post
 title: "“Specific Objects” by Donald Judd"
 date: 2018-01-11 22:30 -0600
 series: 200-essays
+tags: writing
 ---
 A lot has been said about this particular essay, and for good reason. It serves as Donald Judd’s observations (as I understand it, the text is often misinterpreted as a manifesto for his specific branch of minimalist, Modernist art rather than a description) of the work he has found interesting, these pieces which are “neither painting nor sculpture.” It’s difficult to understand what he means without seeing such a work, so here is an image of one of Judd’s pieces, *Untitled*, created four years after the publication of “Specific Objects: “
 

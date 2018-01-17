@@ -3,6 +3,7 @@ layout: post
 title: "“Thing Theory” by Bill Brown"
 date: 2018-01-09 23:14 -0600
 series: 200-essays
+tags: writing
 ---
 
 Think about how easy it is to take objects for granted. You probably have many things literally within arm’s reach at all times—your phone, a wallet, maybe a pair of earbuds. We interact with and use objects every day, some more often than others, some with more ease than others, but always with intention. After all, these objects only make sense in the context of a *subject*, usually us, who bestows upon them a purpose. But what happens when this purpose is lost? What about when an object breaks, falls into obsolescence, or is no longer understood? This, and more, is the study of Bill Brown’s essay, “Thing Theory,” in which he provides a way of thinking about the relationships between objects and things as well as our relationships to both.

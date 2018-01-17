@@ -31,7 +31,7 @@ permalink: /
     <a href="https://twitter.com/unfollowjoshshi" target="_blank"><span class="text">Twitter →</span></a>
     <a href="https://github.com/thehandsomepanther" target="_blank"><span class="text">Github →</span></a>
     <a href="https://www.are.na/josh-shi" target="_blank"><span class="text">Are.na →</span></a>
-    <a href="https://medium.com/@joshshi/latest" target="_blank"><span class="text">Writing →</span></a>
+    <a href="/writing"><span class="text">Writing →</span></a>
     <span class="text"></span>
     <span class="text">Is:</span>
     <span class="text">Editor-in-Chief, Northwestern Undergraduate Research Journal</span>

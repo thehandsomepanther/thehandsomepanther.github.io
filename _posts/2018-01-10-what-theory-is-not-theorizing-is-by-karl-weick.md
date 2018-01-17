@@ -3,6 +3,7 @@ layout: post
 title: "“What Theory is Not, Theorizing Is” by Karl Weick"
 date: 2018-01-10 21:51 -0600
 series: 200-essays
+tags: writing
 ---
 Theories are strange things. They’re often so comfortable that we forget they’re at best approximations. They are, by definition, abstractions over a  a real thing. This is not to say that they’re fragile or unreliable—theories are developed to be resilient, and the process through which theories are formed (i.e. theorizing) is itself rigorous. 
 

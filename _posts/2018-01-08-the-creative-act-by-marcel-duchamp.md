@@ -3,6 +3,7 @@ layout: post
 title: "“The Creative Act” by Marcel Duchamp"
 date: 2018-01-08 17:39 -0600
 series: 200-essays
+tags: writing
 ---
 Here’s a brief but interesting essay to think about by Marcel Duchamp in which he discusses the role of the artist and the spectator (viewers, critics, historians) in what he describes as “the two poles of creation” in the creative process. Near the beginning, he makes a rather bold assertion about the artist:
 

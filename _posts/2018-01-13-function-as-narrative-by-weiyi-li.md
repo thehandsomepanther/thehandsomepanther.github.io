@@ -3,6 +3,7 @@ layout: post
 title: "“Function as Narrative” by Weiyi Li"
 date: 2018-01-13 15:39 -0600
 series: 200-essays
+tags: writing
 ---
 Continuing the discussion that’s been going on with these [past](http://joshshi.com/2018/01/12/specific-objects-by-donald-judd.html) [few](http://joshshi.com/2018/01/10/thing-theory-by-bill-brown.html) essays on objects is “Function as Narrative,” a statement written by designed [Weiyi Li](http://weiyi.li) during her time as a MFA student at Yale. 
 

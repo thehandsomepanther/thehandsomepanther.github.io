@@ -3,6 +3,7 @@ layout: post
 title: "“Art Criticism” by Clement Greenberg"
 date: 2018-01-06 12:51 -0600
 series: 200-essays
+tags: writing
 ---
 “Art Criticism” is a short and straightforward piece by Clement Greenberg in which he reminds us what art criticism is and isn’t in the face of changing attitudes and conceptions about art. If you’ve read Greenberg’s “Avant-Garde and Kitsch” or “Modernist Painting,” you’ll know that he was kept very busy during the early twentieth century with thinking about how different parts of the art world had to change due to the rise of Modernism. “Art Criticism” is one such example in which Greenberg explores in very simple terms the purpose behind criticism, aesthetics, and value judgments—what most of us think of as “taste.” 
 
