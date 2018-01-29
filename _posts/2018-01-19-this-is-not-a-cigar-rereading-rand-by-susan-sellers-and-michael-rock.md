@@ -2,6 +2,8 @@
 layout: post
 title: "“This is Not a Cigar: Rereading Rand” by Susan Sellers and Michael Rock"
 date: 2018-01-19 01:05 -0600
+series: 200-essays
+tags: writing
 ---
 It’s not so often that you get see an example of design criticism as lucid and thoughtful as this. This reading of Rand’s work, which begins with an examination of a flyer Rand made for a brand of cigars, shows us just how ripe for examination graphic design can be, despite the fact that it often isn’t subjected to close readings. 
 

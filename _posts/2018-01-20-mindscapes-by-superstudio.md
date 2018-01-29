@@ -2,6 +2,8 @@
 layout: post
 title: "“Mindscapes” by Superstudio"
 date: 2018-01-20 01:06 -0600
+series: 200-essays
+tags: writing
 ---
 There’s a quote at the beginning of “Mindscapes” which touches on an idea that’s been echoed in past essays in this series:
 
