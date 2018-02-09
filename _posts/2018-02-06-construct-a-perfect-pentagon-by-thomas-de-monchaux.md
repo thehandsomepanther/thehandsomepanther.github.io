@@ -1,0 +1,14 @@
+---
+layout: post
+title: "“Construct a Perfect Pentagon” by Thomas De Monchaux"
+date: 2018-02-06 23:52 -0600
+series: 200-essays
+tags: writing
+---
+I had previously read another one of Thomas De Monchaux’s pieces, [“Have You Ever Had an Intense Experience of Mystical Communion with the Universe, Life, God, etc?”](https://nplusonemag.com/online-only/online-only/have-you-ever-had-an-intense-experience-of-mystical-communion-with-the-universe-life-god-etc/) (also published in *n+1*) earlier last year. It was a review of a book on the life and work of architect Louis Kahn. That essay was one of the first essays I had read on architecture (I previously and foolishly tended to stay away from writings on architecture because I preferred to spend my time reading about graphic design), and the description of the field and the work made me realize exactly why designers today are so envious of the quality of dialogue architects and their critics are able to have. 
+
+I’ve heard a lot of reasons (read: excuses) from designers (mostly graphic designers) as to why there isn’t a comparable body of criticism around design (mostly graphic design), and most of them naturally are comparisons between design and architecture. Design doesn’t have architecture’s age, its history, its patronage, etc, etc. You hear them so often you almost start to believe them. Then De Monchaux wrote “Construct a Perfect Pentagon,” which blows those discussions out of the water.
+
+I’ve read more than a few takes on Jesse Reed and Hamish Smyth’s Standards Manual practice, in which they revive and republish what amount to old brand guidelines which were assembled for laborers with no design training yet have achieved fetish object status among modern designers. What sets “Construct a Perfect Pentagon” apart from the rest is in its diligence, examining in detail not only a few of the actual manuals sold by Reed and Smyth but also their meanings—how they came to exist, what their construction meant for the institutions they represented, and how we as a country have now come to revere these old specification books and yet are content with the deterioration of our public works.
+
+It’s incredibly refreshing to read a piece of graphic design criticism from someone who is not a graphic designer (and the fact that it was published outside of a design trade publication is a nice change of pace as well). Even though these standards manual have already been the subject of much discussion, there’s so much that we miss out on when we focus on the design—in fact, the design might be one of the least important parts. If design is the method by which we give form to fictions, why would we examine only the form and not the fiction?
