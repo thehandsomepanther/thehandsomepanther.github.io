@@ -11,9 +11,6 @@ body {
 .text:empty {
   height: 20px; }
 
-.italic {
-  font-style: italic; }
-
 span, label {
   display: inline-block;
   font-size: 12px;

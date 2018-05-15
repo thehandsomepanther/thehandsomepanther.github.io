@@ -38,6 +38,8 @@
     </header>
     <p>Over the past few quarters, my partner and I have been working on a research project focused on learning more about how we might design a collaborative coding game which helps novice computer science students develop their programming problem-solving skills. Our system is called <a href="https://en.wikipedia.org/wiki/Pear">Pyrus</a> and the project is advised by Nell O’Rourke as part of a class called Design, Technology and Research. We recently submitted a paper to CHI 2018’s Student Research Competition, which focuses mostly on the design arguments for our system and our research contributions, but didn’t give us a chance to talk about some of the interesting technical challenges we faced. In this post, I’ll be going over how we handled one interesting technical hurdle by using Redux on the back-end to synchronize game state between a server and multiple clients.</p>
 
+<p>Update: Pyrus placed first at CHI SRC! If you’re interested in talking about designing programming games to support problem-solving, please email me at hi at joshshi dot com.</p>
+
 <h2 id="the-challenge">The Challenge</h2>
 <p>To provide some context, our system consists of a game which has a few standard game-like components, like a board and a deck of cards. In this game, players can take actions that mutate the state of the game across multiple components, e.g. drawing a card would pop a card off the top of the deck and push it onto the player’s hand. All these changes need to be propagated to all clients in real time and must be handled the same way to ensure that state changes are consistent.</p>
 
@@ -92,7 +94,7 @@
     <span class="k">this</span><span class="p">.</span><span class="nx">board</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Board</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_store</span><span class="p">);</span>
   <span class="p">}</span>
 
-  <span class="c1">// this getter exposes a clean way for outside code to get </span>
+  <span class="c1">// this getter exposes a clean way for outside code to get</span>
   <span class="c1">// information from the Redux store without having to know</span>
   <span class="c1">// the actual layout of the store tree</span>
   <span class="kd">get</span> <span class="nx">status</span><span class="p">()</span> <span class="p">{</span>
@@ -117,7 +119,7 @@
       <span class="c1">// bonus: the deck.draw function called here also</span>
       <span class="c1">// dispatches multiple actions to the store. since</span>
       <span class="c1">// we passed in the store in the board, which in turn</span>
-      <span class="c1">// passes it to the deck, we can implement the draw </span>
+      <span class="c1">// passes it to the deck, we can implement the draw</span>
       <span class="c1">// function in the deck and provide a much simpler</span>
       <span class="c1">// abstraction to use here</span>
       <span class="kd">const</span> <span class="nx">hand</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">board</span><span class="p">.</span><span class="nx">deck</span><span class="p">.</span><span class="nx">draw</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
