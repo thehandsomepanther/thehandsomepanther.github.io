@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Josh Shi: Pyrus</title>
+  <title>Josh Shi: Pyrus, A Programming Game to Support Problem-Solving</title>
   <meta name="description" content="Over the past few quarters, my partner and I have been working on a research project focused on learning more about how we might design a collaborative codin...">
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/2018/01/01/pyrus.html">
@@ -32,13 +32,13 @@
   <div class="post-container sans" itemprop="articleBody">
     <header class="post-header">
       
-        <p class="sans post-title" itemprop="name headline">Pyrus: <span>Using Redux on the server to manage state in a collaborative game to support problem-solving</span></p>
+        <p class="sans post-title" itemprop="name headline">Pyrus, A Programming Game to Support Problem-Solving: <span>A novel approach to supporting problem-solving behaviors among novice programmers using game mechanics. CHI 2018 Student Research Competition winner.</span></p>
       
       <p class="sans post-date">January 01, 2018</p>
     </header>
     <p>Over the past few quarters, my partner and I have been working on a research project focused on learning more about how we might design a collaborative coding game which helps novice computer science students develop their programming problem-solving skills. Our system is called <a href="https://en.wikipedia.org/wiki/Pear">Pyrus</a> and the project is advised by Nell O’Rourke as part of a class called Design, Technology and Research. We recently submitted a paper to CHI 2018’s Student Research Competition, which focuses mostly on the design arguments for our system and our research contributions, but didn’t give us a chance to talk about some of the interesting technical challenges we faced. In this post, I’ll be going over how we handled one interesting technical hurdle by using Redux on the back-end to synchronize game state between a server and multiple clients.</p>
 
-<p>Update: Pyrus placed first at CHI SRC! If you’re interested in talking about designing programming games to support problem-solving, please email me at hi at joshshi dot com.</p>
+<p>Update: Pyrus placed first at CHI SRC (read our extended abstract <a href="/assets/pyrus-src-paper.pdf">here</a>)! If you’re interested in talking about designing programming games to support problem-solving, feel free to email me at hi at joshshi dot com.</p>
 
 <h2 id="the-challenge">The Challenge</h2>
 <p>To provide some context, our system consists of a game which has a few standard game-like components, like a board and a deck of cards. In this game, players can take actions that mutate the state of the game across multiple components, e.g. drawing a card would pop a card off the top of the deck and push it onto the player’s hand. All these changes need to be propagated to all clients in real time and must be handled the same way to ensure that state changes are consistent.</p>

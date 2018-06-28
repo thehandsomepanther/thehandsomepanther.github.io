@@ -31,6 +31,7 @@ permalink: /
     <a href="https://twitter.com/unfollowjoshshi" target="_blank"><span class="text">Twitter →</span></a>
     <a href="https://github.com/thehandsomepanther" target="_blank"><span class="text">Github →</span></a>
     <a href="https://www.are.na/josh-shi" target="_blank"><span class="text">Are.na →</span></a>
+    <a href="/reading"><span class="text">Reading →</span></a>
     <a href="/writing"><span class="text">Writing →</span></a>
     <span class="text"></span>
     <span class="text">Is:</span>
