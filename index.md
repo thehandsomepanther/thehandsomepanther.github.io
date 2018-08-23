@@ -35,16 +35,10 @@ permalink: /
     <a href="/writing"><span class="text">Writing →</span></a>
     <span class="text"></span>
     <span class="text">Is:</span>
+    <span class="text">Software Engineer, Figma</span>
     <span class="text"></span>
     <span class="text">Was:</span>
     <span class="text">Studying Computer Science at Northwestern University</span>
-    <span class="text">Editor-in-Chief, Northwestern Undergraduate Research Journal</span>
-    <span class="text">Student Fellow, Knight Lab</span>
-    <span class="text">Head Teaching Assistant, Human-Computer Interaction</span>
-    <span class="text">Software Engineer Intern, Box</span>
-    <span class="text">Teaching Assistant, NUvention</span>
-    <span class="text">Director, WildHacks</span>
-    <span class="text">Software Engineer Intern, Groupon</span>
     <span class="text"></span>
     <span class="text">Projects</span>
     {% for post in site.posts %}
