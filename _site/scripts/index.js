@@ -201,7 +201,6 @@ function drawScreen() {
           .getComputedStyle(canvasElement, null)
           .getPropertyValue("padding-right")
       ));
-      console.log(canvasWidth)
   var width = Math.floor(canvasWidth / 7);
   canvasElement.style.width = width * 7 + "px";
   var maxCells = width * Math.floor(window.innerHeight / (12 + 6));
@@ -269,8 +268,6 @@ function drawScreen() {
     }
   }
 
-  console.log(cells, maxCells)
-
   // computers HATE this!!
   while (cells < maxCells) {
     var span = document.createElement("span");
@@ -314,7 +311,6 @@ function triggerEvent(el, type, obj) {
 }
 
 function movePen(e) {
-  e.preventDefault();
   if (penActive) {
     var x, y;
 
